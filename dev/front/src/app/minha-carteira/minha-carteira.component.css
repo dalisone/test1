@@ -1,0 +1,103 @@
+.principal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tabela{
+    width: 80%;
+}
+table{
+    width: 100%;
+}
+.caixa-filtro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+}
+
+.saldo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.saldo h1{
+    display: block;
+}
+
+.carteira{
+    width: 50%;
+}
+
+.pessoa{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.filtro{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.filtro h1{
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.comprar{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.vender{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.comprar button, .vender button{
+    padding: 2% 13% 2% 13%
+}
+
+.filter{
+    padding: 5px;
+    margin-right: 11%;
+}
+
+.valor {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome{
+    width: 30%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.nome input{
+    padding: 5px;
+    width: 100%;
+}
