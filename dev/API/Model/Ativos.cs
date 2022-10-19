@@ -31,4 +31,22 @@ public class Ativos{
 
     }
 
+    public static List<object> FindAll(){
+
+        using(var context = new Context()){
+
+            var ativo = context.Ativos.Include(x => x.Grupo);
+
+            List<object> ativos = new List<object>();
+
+            foreach (var item in ativo){
+                ativos.Add(item);
+            }
+
+            return ativos;
+
+        }
+
+    }
+
 }

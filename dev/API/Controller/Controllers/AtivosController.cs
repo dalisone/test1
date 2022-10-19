@@ -9,6 +9,15 @@ namespace Controller.Controllers;
 public class AtivosController : ControllerBase
 {
 
+    [HttpGet]
+    [Route("getAll")]
+
+    public object GetAllInformations()
+    {
+        var ativo = Model.Ativos.FindAll();
+        return ativo;
+    }
+
     [HttpPost]
     [Route("register")]
     public object AtivoRegister([FromBody] Ativos ativos){ 

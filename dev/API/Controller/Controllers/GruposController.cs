@@ -9,6 +9,16 @@ namespace Controller.Controllers;
 public class GruposController : ControllerBase
 {
 
+    
+    [HttpGet]
+    [Route("getAll")]
+
+    public object GetAllInformations()
+    {
+        var grupos = Model.Grupos.FindAll();
+        return grupos;
+    }
+
     [HttpPost]
     [Route("register")]
     public object GrupoRegister([FromBody] Grupos grupos){ 

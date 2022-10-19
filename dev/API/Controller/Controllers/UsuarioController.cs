@@ -22,6 +22,15 @@ public class UsuarioController : ControllerBase
         _configuration = config;
     }
 
+    [HttpGet]
+    [Route("getAll")]
+
+    public object GetAllInformations()
+    {
+        var usuarios = Model.Usuario.FindAll();
+        return usuarios;
+    }
+
     [HttpPost]
     [Route("register")]
 

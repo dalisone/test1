@@ -55,4 +55,22 @@ public class Usuario
 
     }
 
+    public static List<object> FindAll(){
+
+        using(var context = new Context()){
+
+            var usuario = context.Usuario;
+
+            List<object> usuarios = new List<object>();
+
+            foreach (var item in usuario){
+                usuarios.Add(item);
+            }
+
+            return usuarios;
+
+        }
+
+    }
+
 }

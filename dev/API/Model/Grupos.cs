@@ -29,4 +29,22 @@ public class Grupos{
 
     }
 
+    public static List<object> FindAll(){
+
+        using(var context = new Context()){
+
+            var grupo = context.Grupos;
+
+            List<object> grupos = new List<object>();
+
+            foreach (var item in grupo){
+                grupos.Add(item);
+            }
+
+            return grupos;
+
+        }
+
+    }
+
 }

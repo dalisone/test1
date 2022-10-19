@@ -31,4 +31,23 @@ public class Usuario_Ativo {
 
     }
 
+
+    public static List<object> FindAll(){
+
+        using(var context = new Context()){
+
+            var usuarioAtivo = context.Usuario_Ativos.Include(x => x.Ativo).Include(x => x.Usuario);
+
+            List<object> usuarioAtivos = new List<object>();
+
+            foreach (var item in usuarioAtivo){
+                usuarioAtivos.Add(item);
+            }
+
+            return usuarioAtivos;
+
+        }
+
+    }
+
 }
