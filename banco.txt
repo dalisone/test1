@@ -1,0 +1,26 @@
+
+USUARIO
+
+Nome
+Data de Nascimento
+Tipo (Admin, Gerente, Cliente)
+Usuário
+Senha
+
+
+USUARIO_ATIVOS
+
+ID_Usuario
+ID_Ativo
+Saldo
+
+
+ATIVOS
+
+Nome_Ativo
+ID_Grupo (Estrangeira)
+
+
+GRUPOS
+
+Nome_Grupo
