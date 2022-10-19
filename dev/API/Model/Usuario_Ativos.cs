@@ -10,21 +10,21 @@ public class Usuario_Ativo {
     public Ativos Ativo{get; set;}
     public decimal Saldo {get; set;}
 
-    public int Save(){
-
-        int Id = 0;
+    public int Save(int UsuarioId, int AtivoId){
 
         using(var context = new Context()){
 
-            var usuario_ativo = new Usuario_Ativo(){
-
-                var usuario = context.Usuario.Fir
-
+            var usuario = context.Usuario.FirstOrDefault(b => b.Id == UsuarioId);
+            var ativo = context.Ativos.FirstOrDefault(b => b.Id == AtivoId);
+            var obj = new Usuario_Ativo{
+                Saldo = this.Saldo,
+                Usuario = usuario,
+                Ativo = ativo
             };
 
-            context.Usuario.Add(Usuario);
+            context.Usuario_Ativos.Add(obj);
             context.SaveChanges();
-            Id = Usuario.Id;
+            Id = obj.Id;
 
         }
         return Id;

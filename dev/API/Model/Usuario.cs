@@ -1,4 +1,5 @@
 using System;
+using DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace Model;
@@ -37,6 +38,20 @@ public class Usuario
 
         }
         return Id;
+
+    }
+
+    public static Usuario FindByUser(string login, string senha){
+
+        using (var context = new Context()){
+
+            var usuario = context.Usuario.FirstOrDefault(x => x.Login == login && x.Senha == senha);
+
+            if(usuario != null) return usuario;
+
+            return null;
+
+        }
 
     }
 

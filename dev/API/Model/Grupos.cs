@@ -14,19 +14,15 @@ public class Grupos{
 
         using(var context = new Context()){
 
-            var Usuario = new Usuario(){
+            var grupo = new Grupos(){
 
-                DataNasc = this.DataNasc,
                 Nome = this.Nome,
-                Tipo = this.Tipo,
-                Login = this.Login,
-                Senha = this.Senha
 
             };
 
-            context.Usuario.Add(Usuario);
+            context.Grupos.Add(grupo);
             context.SaveChanges();
-            Id = Usuario.Id;
+            Id = grupo.Id;
 
         }
         return Id;

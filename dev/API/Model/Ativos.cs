@@ -10,25 +10,21 @@ public class Ativos{
     public string Nome{get; set;}
     public Grupos Grupo{get; set;}
 
-    public int Save(){
-
-        int Id = 0;
+    public int Save(int GrupoId){
 
         using(var context = new Context()){
 
-            var Usuario = new Usuario(){
+            var grupo = context.Grupos.FirstOrDefault(x => x.Id == GrupoId);
+            var obj = new Ativos(){
 
-                DataNasc = this.DataNasc,
                 Nome = this.Nome,
-                Tipo = this.Tipo,
-                Login = this.Login,
-                Senha = this.Senha
+                Grupo = grupo
 
             };
 
-            context.Usuario.Add(Usuario);
+            context.Ativos.Add(obj);
             context.SaveChanges();
-            Id = Usuario.Id;
+            Id = obj.Id;
 
         }
         return Id;
