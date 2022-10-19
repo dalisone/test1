@@ -1,0 +1,17 @@
+nav {
+    margin-bottom: 7em;
+    height: 5.625em;
+    padding: 1.5em;
+  }
+  .navbar-brand {
+    width: 181px;
+  }
+  .nav-link {
+    font-size: large;
+  }
+  
+  @media (max-width: 991px) {
+    nav {
+      height: auto;
+    }
+  }
