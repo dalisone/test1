@@ -13,7 +13,8 @@ public class Context : DbContext{
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
 
-        optionsBuilder.UseSqlServer("Data Source=" + Environment.MachineName + ";Initial Catalog=BancoInfo; Integrated Security=True");
+        // TEM QUE MUDAR PRA ENTRAR NO BANCO CERTO DEPOIS
+        optionsBuilder.UseSqlServer("Data Source=" + Environment.MachineName + "\\TEW_SQLEXPRESS;Initial Catalog=BancoInfo; Integrated Security=True");
 
     }
 

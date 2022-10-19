@@ -10,4 +10,25 @@ public class Usuario_Ativo {
     public Ativos Ativo{get; set;}
     public decimal Saldo {get; set;}
 
+    public int Save(){
+
+        int Id = 0;
+
+        using(var context = new Context()){
+
+            var usuario_ativo = new Usuario_Ativo(){
+
+                var usuario = context.Usuario.Fir
+
+            };
+
+            context.Usuario.Add(Usuario);
+            context.SaveChanges();
+            Id = Usuario.Id;
+
+        }
+        return Id;
+
+    }
+
 }
