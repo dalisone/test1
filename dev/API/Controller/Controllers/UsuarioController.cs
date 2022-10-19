@@ -69,7 +69,10 @@ public class UsuarioController : ControllerBase
                     claims,
                     expires: DateTime.UtcNow.AddMinutes(30),
                     signingCredentials: signIn);
-                return Ok(new JwtSecurityTokenHandler().WriteToken(token));
+                return new ObjectResult(new {
+                    token = Ok(new JwtSecurityTokenHandler().WriteToken(token)).Value,
+                    tipo = usuario.Tipo 
+                });
             }
             else
             {
