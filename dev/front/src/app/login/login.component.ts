@@ -19,17 +19,17 @@ export class LoginComponent implements OnInit {
     let senha = document.getElementById("password") as HTMLInputElement;
 
     var data = JSON.stringify({
-      "edv": login?.value,
+      "login": login?.value,
       "senha": senha?.value,
-      "area" : "",
-      "email" : "",
+      "tipo" : "",
       "dataNasc" : Date,
-      "nome" : ""
+      "nome" : "",
+      "gerente": 0
     });
     let self = this;
     var config = {
       method: 'post',
-      url: 'http://localhost:5051/user/login',
+      url: 'http://localhost:5232/usuario/login',
       headers: { 
         'Content-Type': 'application/json'
       },
@@ -38,9 +38,18 @@ export class LoginComponent implements OnInit {
 
     axios(config)
     .then(function (response:any) {
-      localStorage.setItem('authToken',response.data);
-      localStorage.removeItem('authOwner');
-      self.router.navigate(['Ocorrencias']);
+      if(response.data.tipo == 0){
+        localStorage.setItem('authTokenClient', response.data.token)
+       self.router.navigate(['minha-carteira']);
+      }
+      else if(response.data.tipo == 1){
+        localStorage.setItem('authTokenGerente', response.data.token)
+        self.router.navigate(['meus-clientes']);
+      }
+      else if(response.data.tipo == 2){
+        localStorage.setItem('authTokenAdm', response.data.token)
+        self.router.navigate(['adm-landing']);
+      }
     })
     .catch(function (error:any) {
       console.log(error);

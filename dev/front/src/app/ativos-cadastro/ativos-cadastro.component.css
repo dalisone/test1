@@ -26,7 +26,7 @@ table{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .filtro h1{
     font-size: 18px;

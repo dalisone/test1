@@ -10,9 +10,9 @@
             <input type="text" class="namefield" id="name" placeholder="Nome Completo">
         </div>
       <div class="filtro">
-        <h1>Idade:</h1>
-        <input type="date" class="filter" id="EDV" placeholder="EDV"/>
-        <button type="button" class="btn btn-success">Salvar</button>
+        <h1>Data de nascimento:</h1>
+        <input class="filter" type="text" id="date" placeholder="Data de Nascimento"  onfocus="(this.type='date')"/>
+        <button type="button" class="btn btn-success" (click)="registrar()">Salvar</button>
       </div>
     </div>
     <div class="tabela">
@@ -24,9 +24,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td>logica ngFor para puxar nomes</td>
-              <td>logica ngFor para puxar idades</td>
+            <tr *ngFor="let item of gerentes">
+              <td>{{item.nome}}</td>
+              <td>{{item.dataNasc}}</td>
             </tr>
           </tbody>
         </table>

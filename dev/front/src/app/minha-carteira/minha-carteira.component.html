@@ -8,66 +8,48 @@
         </div>
         <div class="pessoa">
             <h1 >
-                Colocar nome da pessoa, aqui a idade
+                {{usuario.nome}}, {{usuario.dataNasc}}
             </h1>
         </div>
     </div>
     <div class="caixa-filtro">
         <div class="nome">
-            <select>
-                <option>aqui colocar logica para puxar os ativos</option>
+            <select id="GrupoAtivo">
+                <option *ngFor="let item of ativos" value="{{item.id}}" >{{item.grupo.nome}}/{{item.nome}}</option>
             </select>
         </div>
         <div class="valor">
-            <input type="text" placeholder="Valor R$">
+            <input type="text" placeholder="Valor R$" id="valor">
         </div>
       <div class="filtro">
         <div class="comprar">
-            <button type="button" class="btn btn-secondary">Comprar</button>
+            <button type="button" class="btn btn-secondary" (click)="AddSaldo()">Comprar</button>
         </div>
         <div class="vender">
-            <button type="button" class="btn btn-secondary">Vender</button>
+            <button type="button" class="btn btn-secondary" (click)="DiminuirSaldo()">Vender</button>
         </div>
       </div>
     </div>
     <div class="saldo">
         <div>
             <h1 >
-                Aqui colocar saldo total
+                Saldo Total: R${{soma}}
             </h1>
         </div>
     </div>
-    <div class="tabela">
-        <h3>Ações</h3>
+    <div *ngFor="let item of grupos" class="tabela">
+        <h3 >{{item}}</h3>
         <table class="table table-striped">
           <thead>
             <tr>
-            <th>Nome Ação</th>
+            <th>Nome</th>
             <th>Saldo</th>
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td>logica ngFor para puxar nomes</td>
-              <td>logica ngFor para puxar saldos</td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-
-    <div class="tabela">
-        <h3>Fundos</h3>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-            <th>Nome Fundos</th>
-            <th>Saldo</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr >
-              <td>logica ngFor para puxar nomes</td>
-              <td>logica ngFor para puxar saldos</td>
+            <tr *ngFor="let item2 of mostraAtivo()">
+              <td *ngIf="item2[2] == item">{{item2[0]}}</td>
+              <td *ngIf="item2[2] == item">R${{item2[1]}}</td>
             </tr>
           </tbody>
         </table>

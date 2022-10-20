@@ -18,6 +18,8 @@ public class AtivosController : ControllerBase
         return ativo;
     }
 
+    
+
     [HttpPost]
     [Route("register")]
     public object AtivoRegister([FromBody] Ativos ativos){ 
