@@ -26,11 +26,11 @@ GRUPOS
 Nome_Grupo
 
 insert into Usuario VALUES
-('2022-10-19T17:49:20.184Z', 'Alison', 2, 'login_Alison','senha_Alison'),
-('2022-10-19T17:49:20.184Z', 'Carlos', 1, 'login_Carlos','senha_Carlos'),
-('2022-10-19T17:49:20.184Z', 'Beatriz', 0, 'login_Beatriz','senha_Beatriz'),
-('2022-10-19T17:49:20.184Z', 'Ana', 0, 'login_Ana','senha_Ana'),
-('2022-10-19T17:49:20.184Z', 'Nicholas', 0, 'login_Nicholas','senha_Nicholas')
+('2022-10-19T17:49:20.184Z', 'Alison', 2, 'login_Alison','senha_Alison',0),
+('2022-10-19T17:49:20.184Z', 'Carlos', 1, 'login_Carlos','senha_Carlos',0),
+('2022-10-19T17:49:20.184Z', 'Beatriz', 0, 'login_Beatriz','senha_Beatriz',1),
+('2022-10-19T17:49:20.184Z', 'Ana', 0, 'login_Ana','senha_Ana',1),
+('2022-10-19T17:49:20.184Z', 'Nicholas', 0, 'login_Nicholas','senha_Nicholas',1)
 
 insert into Grupos VALUES
 ('Renda Fixa'),
