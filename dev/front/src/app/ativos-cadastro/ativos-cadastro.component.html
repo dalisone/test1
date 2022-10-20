@@ -11,10 +11,10 @@
         </div>
       <div class="filtro">
         <h1>Grupo de Ativo:</h1>
-        <select class="filter">
-            <option>aqui colocar logica para puxar os grupos</option>
+        <select id="selectGrupos" class="filter">
+            <option *ngFor="let item of grupos" value="{{item.id}}">{{item.nome}}</option>
         </select>
-        <button type="button" class="btn btn-success">Salvar</button>
+        <button type="button" class="btn btn-success" (click)="registrar()">Salvar</button>
       </div>
     </div>
     <div class="tabela">
@@ -26,9 +26,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td>logica ngFor para puxar ativos</td>
-              <td>logica ngFor para puxar grupos</td>
+            <tr *ngFor="let item of ativos">
+              <td>{{item.nome}}</td>
+              <td>{{item.grupo.nome}}</td>
             </tr>
           </tbody>
         </table>

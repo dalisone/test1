@@ -5,6 +5,7 @@ export interface Usuario{
     nome: string,
     tipo: number,
     login: string,
-    senha: string
+    senha: string,
+    gerente: number
 
 }

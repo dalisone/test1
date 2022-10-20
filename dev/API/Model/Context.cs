@@ -45,6 +45,7 @@ public class Context : DbContext{
             entity.Property(a => a.Tipo).IsRequired();
             entity.Property(a => a.Login);
             entity.Property(a => a.Senha);
+            entity.Property(x => x.Gerente);
 
         });
 

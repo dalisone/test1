@@ -34,7 +34,8 @@ export class MinhaCarteiraComponent implements OnInit {
         dataNasc: "",
         senha: "",
         login: "",
-        tipo: 0
+        tipo: 0,
+        gerente: 0
 
       }
 
@@ -173,7 +174,8 @@ export class MinhaCarteiraComponent implements OnInit {
             "nome" : "",
             "tipo" : 0,
             "login" : "",
-            "senha" : ""
+            "senha" : "",
+            "gerente": 0
           },
           "ativo": {
             "id" : idAtivo,
@@ -214,7 +216,8 @@ export class MinhaCarteiraComponent implements OnInit {
             "nome" : "",
             "tipo" : 0,
             "login" : "",
-            "senha" : ""
+            "senha" : "",
+            "gerente": 0
           },
           "ativo": {
             "id" : 0,
@@ -326,7 +329,8 @@ export class MinhaCarteiraComponent implements OnInit {
               "nome" : "",
               "tipo" : 0,
               "login" : "",
-              "senha" : ""
+              "senha" : "",
+              "gerente": 0
             },
             "ativo": {
               "id" : 0,

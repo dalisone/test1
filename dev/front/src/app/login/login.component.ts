@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
       "senha": senha?.value,
       "tipo" : "",
       "dataNasc" : Date,
-      "nome" : ""
+      "nome" : "",
+      "gerente": 0
     });
     let self = this;
     var config = {
