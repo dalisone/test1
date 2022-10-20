@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  TokenCliente : string | null;
+  TokenGerente : string | null;
+  TokenAdm : string | null;
+
+  constructor() { 
+
+    this.TokenCliente = localStorage.getItem('authTokenClient')
+    this.TokenGerente = localStorage.getItem('authTokenGerente')
+    this.TokenAdm = localStorage.getItem('authTokenAdm')
+
+  }
 
   ngOnInit(): void {
+  }
+
+  sair(){
+
+    localStorage.removeItem('authTokenClient')
+    localStorage.removeItem('authTokenGerente')
+    localStorage.removeItem('authTokenAdm')
+
   }
 
 }

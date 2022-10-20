@@ -31,6 +31,16 @@ public class UsuarioController : ControllerBase
         return usuarios;
     }
 
+    [HttpGet]
+    [Route("getById")]
+    public object GetInformations(){
+
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var usuario = Model.Usuario.FindByID(id);
+        return usuario;
+
+    }
+
     [HttpPost]
     [Route("register")]
 

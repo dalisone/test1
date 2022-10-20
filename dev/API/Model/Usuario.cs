@@ -55,6 +55,26 @@ public class Usuario
 
     }
 
+    public static object FindByID(int id){
+
+        using(var context = new Context()){
+
+            var usuario = context.Usuario.FirstOrDefault(x => x.Id == id);
+            return new{
+
+                DataNasc = usuario.DataNasc,
+                Nome = usuario.Nome,
+                Tipo = usuario.Tipo,
+                Login = usuario.Login,
+                Senha = usuario.Senha,
+                Id = id
+
+            };
+
+        }
+
+    }
+
     public static List<object> FindAll(){
 
         using(var context = new Context()){

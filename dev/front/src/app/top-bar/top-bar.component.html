@@ -13,8 +13,17 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li *ngIf="TokenCliente != null" class="nav-item nav-link">
+              Cliente
+            </li>
+            <li *ngIf="TokenGerente != null" class="nav-item nav-link">
+              Gerente
+            </li>
+            <li *ngIf="TokenAdm != null" class="nav-item nav-link">
+              Admin
+            </li>
             <li class="nav-item ">
-              <a  class="nav-link"  [routerLink]="['']">Sair</a>
+              <a  class="nav-link"  [routerLink]="['']" (click)="sair()">Sair</a>
             </li>
           </ul>
         </div>

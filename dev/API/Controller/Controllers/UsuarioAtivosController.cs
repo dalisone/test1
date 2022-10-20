@@ -5,7 +5,7 @@ using DTO;
 namespace Controller.Controllers;
 
 [ApiController]
-[Route("usarioAtivos")]
+[Route("usuarioAtivos")]
 public class UsuarioAtivosController : ControllerBase
 {
 
@@ -16,6 +16,24 @@ public class UsuarioAtivosController : ControllerBase
     {
         var usuarioAtivo = Model.Usuario_Ativo.FindAll();
         return usuarioAtivo;
+    }
+
+    [HttpGet]
+    [Route("getByCliente")]
+    public object GetInformationById()
+    {
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var ativos = Model.Usuario_Ativo.FindById(id);
+        return ativos;
+    }
+
+    [HttpGet]
+    [Route("getUserAtivo/{idAtivo}")]
+    public object GetUserAtivo(int idAtivo)
+    {
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var ativos = Model.Usuario_Ativo.FindUserAtivo(id, idAtivo);
+        return ativos;
     }
 
     [HttpPost]
@@ -30,5 +48,16 @@ public class UsuarioAtivosController : ControllerBase
         };
     }
 
+    [HttpPut]
+    [Route("mudarSaldo/{id}")]
+    public object AdicionarSaldo([FromBody] Usuario_Ativo usuarioAtivo, int id){
+
+        Model.Usuario_Ativo.MudaSaldo(usuarioAtivo, id);
+        return new{
+            status = "ok",
+            mensagem = "sucesso"
+        };
+
+    }
     
 }
