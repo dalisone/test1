@@ -31,6 +31,8 @@ public class Ativos{
 
     }
 
+    
+
     public static List<object> FindAll(){
 
         using(var context = new Context()){

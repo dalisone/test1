@@ -31,6 +31,16 @@ public class UsuarioController : ControllerBase
         return usuarios;
     }
 
+    [HttpGet]
+    [Route("getById")]
+    public object GetInformations(){
+
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var usuario = Model.Usuario.FindByID(id);
+        return usuario;
+
+    }
+
     [HttpPost]
     [Route("register")]
 
@@ -69,7 +79,10 @@ public class UsuarioController : ControllerBase
                     claims,
                     expires: DateTime.UtcNow.AddMinutes(30),
                     signingCredentials: signIn);
-                return Ok(new JwtSecurityTokenHandler().WriteToken(token));
+                return new ObjectResult(new {
+                    token = Ok(new JwtSecurityTokenHandler().WriteToken(token)).Value,
+                    tipo = usuario.Tipo 
+                });
             }
             else
             {
