@@ -14,7 +14,6 @@ export class MinhaCarteiraComponent implements OnInit {
 
   ativos : Array<Ativos> = [];
   grupos : Array<string> = [];
-  saldosAtivos : Array<Array<string>> = [];
   usuario : Usuario
   usuarioAtivos : Array<UsuarioAtivos> = [];
   IdUsuarioAtivos : Array<UsuarioAtivos> = [];
@@ -34,7 +33,8 @@ export class MinhaCarteiraComponent implements OnInit {
         dataNasc: "",
         senha: "",
         login: "",
-        tipo: 0
+        tipo: 0,
+        gerente: 0
 
       }
 
@@ -90,7 +90,6 @@ export class MinhaCarteiraComponent implements OnInit {
         if(tem == false){
           self.grupos.push(self.usuarioAtivos[i].ativo.grupo.nome)
         }
-        self.saldosAtivos.push([self.usuarioAtivos[i].ativo.nome, self.usuarioAtivos[i].saldo.toString(), self.usuarioAtivos[i].ativo.grupo.nome])
 
         self.soma = self.soma + self.usuarioAtivos[i].saldo
       }
@@ -138,6 +137,10 @@ export class MinhaCarteiraComponent implements OnInit {
 
     let quantia = document.getElementById("valor") as HTMLInputElement;
 
+    if(quantia.value < "1"){
+      return alert("Insira um valor positivo!")
+    }
+
     let self = this;
     
     console.log("chegou aqui pra add saldo");
@@ -169,7 +172,8 @@ export class MinhaCarteiraComponent implements OnInit {
             "nome" : "",
             "tipo" : 0,
             "login" : "",
-            "senha" : ""
+            "senha" : "",
+            "gerente": 0
           },
           "ativo": {
             "id" : idAtivo,
@@ -193,7 +197,7 @@ export class MinhaCarteiraComponent implements OnInit {
         };
         axios(config)
         .then(function (response:any) {
-          console.log(response.data)
+          window.location.reload()
         })
         .catch(function (error:any) {
           console.log(error);
@@ -210,7 +214,8 @@ export class MinhaCarteiraComponent implements OnInit {
             "nome" : "",
             "tipo" : 0,
             "login" : "",
-            "senha" : ""
+            "senha" : "",
+            "gerente": 0
           },
           "ativo": {
             "id" : 0,
@@ -283,42 +288,78 @@ export class MinhaCarteiraComponent implements OnInit {
       }
       else{
 
-        var data = JSON.stringify({
-          "id" : self.IdUsuarioAtivos[0].id,
-          "usuario":{
-            "id" : 0,
-            "dataNasc" : "2022-10-20T00:53:48.126Z",
-            "nome" : "",
-            "tipo" : 0,
-            "login" : "",
-            "senha" : ""
-          },
-          "ativo": {
-            "id" : 0,
-            "nome" : "string",
-            "grupo" : {
-              "id" : 0,
-              "nome" : ""
-            }
-          },
-          "saldo" : resultado
-        });
-        var config = {
-          method: 'put',
-          url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,
-          headers: { 
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
-          },
-          data : data
-          };
-          axios(config)
-          .then(function (response:any) {
-            window.location.reload()
-          })
-          .catch(function (error:any) {
-            console.log(error);
+        if(parseInt(quantia.value) > self.IdUsuarioAtivos[0].saldo){
+          console.log(quantia.value)
+          console.log(self.IdUsuarioAtivos[0].saldo.toString())
+          return alert("Você não pode vender mais do que possui!")
+        }
+
+        if((self.IdUsuarioAtivos[0].saldo + resultado) <= 0){
+
+          console.log(self.IdUsuarioAtivos[0].id)
+
+          var data = JSON.stringify({
           });
+          var config = {
+            method: 'delete',
+            url: 'http://localhost:5232/usuarioAtivos/del/' + self.IdUsuarioAtivos[0].id,
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
+            },
+            data : data
+            };
+            axios(config)
+            .then(function (response:any) {
+              window.location.reload()
+            })
+            .catch(function (error:any) {
+              console.log(error);
+            });
+        }
+        else{
+
+          var data = JSON.stringify({
+            "id" : self.IdUsuarioAtivos[0].id,
+            "usuario":{
+              "id" : 0,
+              "dataNasc" : "2022-10-20T00:53:48.126Z",
+              "nome" : "",
+              "tipo" : 0,
+              "login" : "",
+              "senha" : "",
+              "gerente": 0
+            },
+            "ativo": {
+              "id" : 0,
+              "nome" : "string",
+              "grupo" : {
+                "id" : 0,
+                "nome" : ""
+              }
+            },
+            "saldo" : resultado
+          });
+          var config = {
+            method: 'put',
+            url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
+            },
+            data : data
+            };
+            axios(config)
+            .then(function (response:any) {
+              window.location.reload()
+            })
+            .catch(function (error:any) {
+              console.log(error);
+            });
+
+        }
+
+        
 
       }
     })

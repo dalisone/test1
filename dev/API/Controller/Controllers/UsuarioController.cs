@@ -41,6 +41,25 @@ public class UsuarioController : ControllerBase
 
     }
 
+    [HttpGet]
+    [Route("getByType")]
+    public object GetInformationsByType(){
+
+        var usuario = Model.Usuario.FindByType();
+        return usuario;
+
+    }
+
+    [HttpGet]
+    [Route("getClientes")]
+    public object GetClientes(){
+
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var usuario = Model.Usuario.FindByGerente(id);
+        return usuario;
+
+    }
+
     [HttpPost]
     [Route("register")]
 
@@ -52,7 +71,8 @@ public class UsuarioController : ControllerBase
             DataNasc = usuario.DataNasc,
             Tipo = usuario.Tipo,
             Login = usuario.Login,
-            Senha = usuario.Senha
+            Senha = usuario.Senha,
+            Gerente = usuario.Gerente
         };
 
     }

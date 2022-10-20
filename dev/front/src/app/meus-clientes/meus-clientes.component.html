@@ -25,10 +25,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr >
-              <td>logica ngFor para puxar nomes</td>
-              <td>logica ngFor para puxar idades</td>
-              <td>logica ngFor para puxar saldos</td>
+            <tr *ngFor="let item of mostraDados()">
+              <td>{{item[0]}}</td>
+              <td>{{item[1]}}</td>
+              <td>{{item[2]}}</td>
             </tr>
           </tbody>
         </table>

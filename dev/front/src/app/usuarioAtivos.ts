@@ -2,7 +2,9 @@ export interface UsuarioAtivos
 {
     id: number,
     usuario: {
-        id:number
+        id:number,
+        dataNasc: string,
+        nome: string
     },
     ativo: {
         id:number,

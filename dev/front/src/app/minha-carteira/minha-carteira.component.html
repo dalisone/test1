@@ -47,9 +47,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let item2 of saldosAtivos">
-              <td *ngIf="item2[2] == item">{{item2[0]}}</td>
-              <td *ngIf="item2[2] == item">R${{item2[1]}}</td>
+            <tr *ngFor="let item2 of usuarioAtivos">
+              <td *ngIf="item2.ativo.grupo.nome == item">{{item2.ativo.nome}}</td>
+              <td *ngIf="item2.ativo.grupo.nome == item">R${{item2.saldo}}</td>
             </tr>
           </tbody>
         </table>

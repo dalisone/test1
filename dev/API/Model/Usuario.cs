@@ -14,6 +14,7 @@ public class Usuario
     public int Tipo{get; set;}
     public string Login {get; set;}
     public string Senha {get; set;}
+    public int Gerente {get; set;}
 
 
     public int Save(){
@@ -28,7 +29,8 @@ public class Usuario
                 Nome = this.Nome,
                 Tipo = this.Tipo,
                 Login = this.Login,
-                Senha = this.Senha
+                Senha = this.Senha,
+                Gerente = this.Gerente
 
             };
 
@@ -55,6 +57,23 @@ public class Usuario
 
     }
 
+    public static List<object> FindByGerente(int id){
+        
+        using(var context = new Context()){
+
+            var cliente = context.Usuario_Ativos.Where(x=> x.Usuario.Gerente == id).Include(x=> x.Usuario);
+
+            List<object> clientes = new List<object>();
+
+            foreach (var item in cliente){
+                clientes.Add(item);
+            }
+
+            return clientes;
+        }
+
+    }
+
     public static object FindByID(int id){
 
         using(var context = new Context()){
@@ -67,10 +86,28 @@ public class Usuario
                 Tipo = usuario.Tipo,
                 Login = usuario.Login,
                 Senha = usuario.Senha,
+                Gerente = usuario.Gerente,
                 Id = id
 
             };
 
+        }
+
+    }
+
+     public static List<object> FindByType(){
+
+        using(var context = new Context()){
+
+            var usuario = context.Usuario.Where(x => x.Tipo == 1);
+           
+            List<object> usuarios = new List<object>();
+
+            foreach (var item in usuario){
+                usuarios.Add(item);
+            }
+
+            return usuarios;
         }
 
     }
