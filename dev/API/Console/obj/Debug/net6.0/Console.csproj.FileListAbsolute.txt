@@ -66,15 +66,8 @@ E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dl
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -238,3 +231,14 @@ C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Console\obj\Debug\net6
 C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Console\obj\Debug\net6.0\Console.pdb
 C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Console\obj\Debug\net6.0\Console.genruntimeconfig.cache
 C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Console\obj\Debug\net6.0\ref\Console.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\DTO.dll
+E:\dabia\test1\dev\API\Console\bin\Debug\net6.0\DTO.pdb

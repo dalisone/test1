@@ -102,4 +102,17 @@ public class Usuario_Ativo {
 
     }
 
+    public static void Delete(int id){
+
+        using(var context = new Context()){
+
+            var UsuarioAtivo = context.Usuario_Ativos.FirstOrDefault(x => x.Id == id);
+
+            context.Remove(UsuarioAtivo);
+            context.SaveChanges();
+
+        }
+
+    }
+
 }

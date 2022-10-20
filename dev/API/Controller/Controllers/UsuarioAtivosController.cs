@@ -48,6 +48,17 @@ public class UsuarioAtivosController : ControllerBase
         };
     }
 
+    [HttpDelete]
+    [Route("del/{id}")]
+    public object UsuatioAtivoDelete(int id){
+
+        Model.Usuario_Ativo.Delete(id);
+        return new {
+            status = "objeto foi deletado com sucesso!"
+        };
+
+    }
+
     [HttpPut]
     [Route("mudarSaldo/{id}")]
     public object AdicionarSaldo([FromBody] Usuario_Ativo usuarioAtivo, int id){

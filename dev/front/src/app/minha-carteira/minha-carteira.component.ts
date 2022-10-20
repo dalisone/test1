@@ -138,6 +138,10 @@ export class MinhaCarteiraComponent implements OnInit {
 
     let quantia = document.getElementById("valor") as HTMLInputElement;
 
+    if(quantia.value < "1"){
+      return alert("Insira um valor positivo!")
+    }
+
     let self = this;
     
     console.log("chegou aqui pra add saldo");
@@ -193,7 +197,7 @@ export class MinhaCarteiraComponent implements OnInit {
         };
         axios(config)
         .then(function (response:any) {
-          console.log(response.data)
+          window.location.reload()
         })
         .catch(function (error:any) {
           console.log(error);
@@ -283,42 +287,77 @@ export class MinhaCarteiraComponent implements OnInit {
       }
       else{
 
-        var data = JSON.stringify({
-          "id" : self.IdUsuarioAtivos[0].id,
-          "usuario":{
-            "id" : 0,
-            "dataNasc" : "2022-10-20T00:53:48.126Z",
-            "nome" : "",
-            "tipo" : 0,
-            "login" : "",
-            "senha" : ""
-          },
-          "ativo": {
-            "id" : 0,
-            "nome" : "string",
-            "grupo" : {
-              "id" : 0,
-              "nome" : ""
-            }
-          },
-          "saldo" : resultado
-        });
-        var config = {
-          method: 'put',
-          url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,
-          headers: { 
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
-          },
-          data : data
-          };
-          axios(config)
-          .then(function (response:any) {
-            window.location.reload()
-          })
-          .catch(function (error:any) {
-            console.log(error);
+        if(parseInt(quantia.value) > self.IdUsuarioAtivos[0].saldo){
+          console.log(quantia.value)
+          console.log(self.IdUsuarioAtivos[0].saldo.toString())
+          return alert("Você não pode vender mais do que possui!")
+        }
+
+        if((self.IdUsuarioAtivos[0].saldo + resultado) <= 0){
+
+          console.log(self.IdUsuarioAtivos[0].id)
+
+          var data = JSON.stringify({
           });
+          var config = {
+            method: 'delete',
+            url: 'http://localhost:5232/usuarioAtivos/del/' + self.IdUsuarioAtivos[0].id,
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
+            },
+            data : data
+            };
+            axios(config)
+            .then(function (response:any) {
+              window.location.reload()
+            })
+            .catch(function (error:any) {
+              console.log(error);
+            });
+        }
+        else{
+
+          var data = JSON.stringify({
+            "id" : self.IdUsuarioAtivos[0].id,
+            "usuario":{
+              "id" : 0,
+              "dataNasc" : "2022-10-20T00:53:48.126Z",
+              "nome" : "",
+              "tipo" : 0,
+              "login" : "",
+              "senha" : ""
+            },
+            "ativo": {
+              "id" : 0,
+              "nome" : "string",
+              "grupo" : {
+                "id" : 0,
+                "nome" : ""
+              }
+            },
+            "saldo" : resultado
+          });
+          var config = {
+            method: 'put',
+            url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
+            },
+            data : data
+            };
+            axios(config)
+            .then(function (response:any) {
+              window.location.reload()
+            })
+            .catch(function (error:any) {
+              console.log(error);
+            });
+
+        }
+
+        
 
       }
     })
