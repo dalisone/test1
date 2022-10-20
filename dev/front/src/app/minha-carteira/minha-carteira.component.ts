@@ -328,9 +328,4 @@ export class MinhaCarteiraComponent implements OnInit {
 
   }
 
-  mostraAtivo(){
-
-    return this.saldosAtivos
-  }
-
 }
