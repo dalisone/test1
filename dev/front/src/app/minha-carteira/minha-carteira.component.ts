@@ -14,7 +14,6 @@ export class MinhaCarteiraComponent implements OnInit {
 
   ativos : Array<Ativos> = [];
   grupos : Array<string> = [];
-  saldosAtivos : Array<Array<string>> = [];
   usuario : Usuario
   usuarioAtivos : Array<UsuarioAtivos> = [];
   IdUsuarioAtivos : Array<UsuarioAtivos> = [];
@@ -91,7 +90,6 @@ export class MinhaCarteiraComponent implements OnInit {
         if(tem == false){
           self.grupos.push(self.usuarioAtivos[i].ativo.grupo.nome)
         }
-        self.saldosAtivos.push([self.usuarioAtivos[i].ativo.nome, self.usuarioAtivos[i].saldo.toString(), self.usuarioAtivos[i].ativo.grupo.nome])
 
         self.soma = self.soma + self.usuarioAtivos[i].saldo
       }
@@ -369,11 +367,6 @@ export class MinhaCarteiraComponent implements OnInit {
       console.log(error);
     });
 
-  }
-
-  mostraAtivo(){
-
-    return this.saldosAtivos
   }
 
 }
