@@ -65,7 +65,7 @@ Após colar os comando segure as teclas "ctrl" + "a" e aperte o botao "F5"
 
 7º Passo - Após realizar o 6º Passo, volte ao cmd cujo caminho final é "publish\API\Console" e digite "cd .." e acesse a pasta "Controller"
 
-8º Passo - Em seguida utilize o comando "dotnet run"
+8º Passo - Em seguida utilize o comando "dotnet watch", após a execução do comando o navegador irá abrir uma aba do Swagger, clique em avançados e prossiga para a página.
 
 9º Passo - Após realizar o 8º Passo, abra no navegador de sua escolha o link "localhost:4200"
 
