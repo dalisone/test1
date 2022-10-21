@@ -1,0 +1,58 @@
+<app-top-bar></app-top-bar>
+<div class="principal">
+    <div class="titulo">
+        <div class="carteira">
+            <h1 >
+                Minha Carteira
+            </h1>
+        </div>
+        <div class="pessoa">
+            <h1 >
+                {{usuario.nome}}, {{usuario.dataNasc}}
+            </h1>
+        </div>
+    </div>
+    <div class="caixa-filtro">
+        <div class="nome">
+            <select id="GrupoAtivo">
+                <option *ngFor="let item of ativos" value="{{item.id}}" >{{item.grupo.nome}}/{{item.nome}}</option>
+            </select>
+        </div>
+        <div class="valor">
+            <input type="text" placeholder="Valor R$" id="valor">
+        </div>
+      <div class="filtro">
+        <div class="comprar">
+            <button type="button" class="btn btn-secondary" (click)="AddSaldo()">Comprar</button>
+        </div>
+        <div class="vender">
+            <button type="button" class="btn btn-secondary" (click)="DiminuirSaldo()">Vender</button>
+        </div>
+      </div>
+    </div>
+    <div class="saldo">
+        <div>
+            <h1 >
+                Saldo Total: R${{soma}}
+            </h1>
+        </div>
+    </div>
+    <div *ngFor="let item of grupos" class="tabela">
+        <h3 >{{item}}</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item2 of usuarioAtivos">
+              <td *ngIf="item2.ativo.grupo.nome == item">{{item2.ativo.nome}}</td>
+              <td *ngIf="item2.ativo.grupo.nome == item">R${{item2.saldo}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  

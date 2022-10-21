@@ -1,0 +1,86 @@
+h2{
+    font-size: 45px;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+.login{
+    text-align: center;
+
+}
+.loginInput{
+    size: 200px;
+    margin-bottom: 1%;
+}
+
+.loginInput input{
+    width: 18%;
+    padding: 5px;
+}
+
+.passwordInput{
+    margin-bottom: 1.7%;
+}
+
+.passwordInput input{
+    width: 18%;
+    padding: 5px;
+}
+
+@media (max-width: 991px) {
+    .loginInput input {
+        width: 200px;
+      }
+
+    .passwordInput input {
+      width: 200px;
+    }
+
+    .passwordInput{
+        margin-bottom: 7%;
+    }
+  }
+
+.sub{
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.link{
+    color: gray;
+    cursor: pointer;
+}
+.button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+  }
+  
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+  
+  /* Fancy Button */
+  
+  .fancy-button {
+    background-color: white;
+    color: #1976d2;
+  }
+  
+  .fancy-button i.material-icons {
+    color: #1976d2;
+    padding-right: 4px;
+  }
