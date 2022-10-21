@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\dabia\\test1\\dev\\API\\Console\\Console.csproj": {}
+    "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Console\\Console.csproj": {}
   },
   "projects": {
-    "E:\\dabia\\test1\\dev\\API\\Console\\Console.csproj": {
+    "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Console\\Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dabia\\test1\\dev\\API\\Console\\Console.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Console\\Console.csproj",
         "projectName": "Console",
-        "projectPath": "E:\\dabia\\test1\\dev\\API\\Console\\Console.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "E:\\dabia\\test1\\dev\\API\\Console\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Console\\Console.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\dabia\\test1\\dev\\API\\Model\\Model.csproj": {
-                "projectPath": "E:\\dabia\\test1\\dev\\API\\Model\\Model.csproj"
+              "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\Model.csproj"
               }
             }
           }
@@ -100,20 +100,20 @@
         }
       }
     },
-    "E:\\dabia\\test1\\dev\\API\\DTO\\DTO.csproj": {
+    "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dabia\\test1\\dev\\API\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "E:\\dabia\\test1\\dev\\API\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "E:\\dabia\\test1\\dev\\API\\DTO\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -192,20 +192,20 @@
         }
       }
     },
-    "E:\\dabia\\test1\\dev\\API\\Model\\Model.csproj": {
+    "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dabia\\test1\\dev\\API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "E:\\dabia\\test1\\dev\\API\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "E:\\dabia\\test1\\dev\\API\\Model\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -220,8 +220,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\dabia\\test1\\dev\\API\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\dabia\\test1\\dev\\API\\DTO\\DTO.csproj"
+              "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\aliso\\Desktop\\projetos\\INFO Invest\\test1\\dev\\API\\DTO\\DTO.csproj"
               }
             }
           }

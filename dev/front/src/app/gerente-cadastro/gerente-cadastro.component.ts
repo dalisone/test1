@@ -121,8 +121,7 @@ export class GerenteCadastroComponent implements OnInit {
     };
     axios(config)
     .then(function (response:any) {
-      console.log((nome.value).indexOf(" "))
-      console.log(response.data)
+      window.location.reload()
     })
     .catch(function (error:any) {
       console.log(error);

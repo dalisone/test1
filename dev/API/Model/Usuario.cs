@@ -61,7 +61,18 @@ public class Usuario
         
         using(var context = new Context()){
 
-            var cliente = context.Usuario_Ativos.Where(x=> x.Usuario.Gerente == id).Include(x=> x.Usuario);
+            var cliente = context.Usuario.Join(context.Usuario_Ativos, u => u.Id, ua => ua.Usuario.Id, (u, ua) => new{
+                idUsuario = u.Id,
+                id = ua.Id,
+                saldo = ua.Saldo,
+                nome = u.Nome,
+                dataNasc = u.DataNasc,
+                gerente = u.Gerente
+            }).Where(x => x.gerente == id).GroupBy(x => new {x.nome, x.dataNasc}, x=> x.saldo, (key, g) => new{
+                nome = key.nome,
+                dataNasc = key.dataNasc,
+                saldo = g.ToList().Sum()
+            }).OrderBy(x => x.nome);
 
             List<object> clientes = new List<object>();
 
@@ -90,6 +101,17 @@ public class Usuario
                 Id = id
 
             };
+
+        }
+
+    }
+
+    public static int FindByName(string name){
+
+        using(var context = new Context()){
+
+            var usuario = context.Usuario.FirstOrDefault(x => x.Nome == name);
+            return usuario.Id;
 
         }
 

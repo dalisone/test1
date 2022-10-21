@@ -10,14 +10,34 @@ import axios from 'axios';
 export class MeusClientesComponent implements OnInit {
 
   clientes : Array<UsuarioAtivos> = [];
-  dadosCliente: Array<Array<string>> = [];
-  nomesCliente: Array<string> = [];
-  idadesCliente: Array<string> = [];
-  saldosCliente: Array<string> = [];
+  saldos: Array<number> = [100,50,200];
+  nome : string = ""
+  usuarioId : number = 0
+  gerenteId: number = 0
 
   constructor() { }
 
   ngOnInit(): void {
+
+    var data2 = JSON.stringify({
+      
+    });
+    var config2 = {
+      method: 'get',
+      url: 'http://localhost:5232/usuario/getById',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('authTokenGerente')
+      },
+      data : data2
+    };
+    axios(config2)
+    .then(function (response:any) {
+      self.gerenteId = response.data.id;
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
 
     var data = JSON.stringify({
       
@@ -36,28 +56,13 @@ export class MeusClientesComponent implements OnInit {
     .then(function (response:any) {
       self.clientes = response.data
       for(var i =0; i < self.clientes.length; i++){
-        let dataNova = self.clientes[i].usuario.dataNasc.substring(0,10).toString();
+        let dataNova = self.clientes[i].dataNasc.substring(0,10).toString();
         let year = dataNova.substring(0,4);
         let DataAtual = new Date();
         let AnoAtual = DataAtual.getFullYear();
-        self.clientes[i].usuario.dataNasc = (AnoAtual  - parseInt(year)).toString();
-
-        let temNome = self.nomesCliente.includes(self.clientes[i].usuario.nome)
-        let temIdade = self.nomesCliente.includes(self.clientes[i].usuario.dataNasc)
+        self.clientes[i].dataNasc = (AnoAtual  - parseInt(year)).toString();
         
-
-        if(temNome == false){
-          self.nomesCliente.push(self.clientes[i].usuario.nome)
-        }
-        if(temIdade == false){
-          self.idadesCliente.push(self.clientes[i].usuario.dataNasc)
-        }
-
-        self.addSaldos(self.clientes[i].usuario.nome, i)
-        
-        // aqui precisa implementar uma logica do nao include self.dadosCliente.push([self.clientes[i].usuario.nome, self.clientes[i].usuario.dataNasc, self.clientes[i].saldo.toString()])
       }
-      console.log(self.clientes)
     })
     .catch(function (error:any) {
       console.log(error);
@@ -65,23 +70,126 @@ export class MeusClientesComponent implements OnInit {
 
   }
 
-  addSaldos(nome: string, indiceFor: number){
+  cadastrar(){
 
-    var indice = this.nomesCliente.indexOf(nome)
+    let nome = document.getElementById("name") as HTMLInputElement;
 
-    this.saldosCliente[indice] = this.saldosCliente[indice] + this.clientes[indiceFor].saldo
+    let dataNascimento = document.getElementById("date") as HTMLInputElement;
+
+    let primeiroNome = (nome.value).substring(0, (nome.value).indexOf(" "))
+
+    let self = this
+    
+    if((nome.value).indexOf(" ") == -1){
+      primeiroNome = nome.value
+    }
+
+    console.log(self.gerenteId)
+
+    var data = JSON.stringify({
+      "id" : 0,
+      "dataNasc" : dataNascimento?.value + "T00:00:00.000Z",
+      "nome" : nome?.value,
+      "tipo" : 0,
+      "login" : "login_" + primeiroNome,
+      "senha" : "senha_" + primeiroNome,
+      "gerente" : self.gerenteId
+    });
+    var config = {
+      method: 'post',
+      url: 'http://localhost:5232/usuario/register',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')
+      },
+      data : data
+    };
+    axios(config)
+    .then(function (response:any) {
+      self.pegarId(nome.value)
+      console.log(response.data)
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
 
   }
 
-  mostraDados() {
+  pegarId(nome: string){
 
-    for(var i = 0; i < this.nomesCliente.length; i++){
+    var data2 = JSON.stringify({
+      "nome" : nome,
+      "dataNasc" : new Date(),
+      "login": "",
+      "senha": ""
+    });
+    let self = this;
+    var config2 = {
+      method: 'post',
+      url: 'http://localhost:5232/usuario/getIdByName',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('authTokenGerente')
+      },
+      data : data2
+    };
+    axios(config2)
+    .then(function (response:any) {
+      self.usuarioId = response.data.id
+      self.cadastrarAtivos(self.usuarioId)
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
 
-      this.dadosCliente.push([this.nomesCliente[i], this.idadesCliente[i], this.saldosCliente[i]])
+  }
+
+
+  cadastrarAtivos(id: number){
+
+    for(var i = 0; i < this.saldos.length; i++){
+      
+
+      var data = JSON.stringify({
+        "id" : 0,
+        "usuario":{
+          "id" : id,
+          "dataNasc" : "2022-10-20T00:53:48.126Z",
+          "nome" : "",
+          "tipo" : 0,
+          "login" : "",
+          "senha" : "",
+          "gerente": 0
+        },
+        "ativo": {
+          "id" : i+1,
+          "nome" : "string",
+          "grupo" : {
+            "id" : 0,
+            "nome" : ""
+          }
+        },
+        "saldo" : this.saldos[i]
+  
+      });
+      var config = {
+        method: 'post',
+        url: 'http://localhost:5232/usuarioAtivos/register',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')
+        },
+        data : data
+      };
+      axios(config)
+      .then(function (response:any) {
+        window.location.reload()
+      })
+      .catch(function (error:any) {
+        console.log(error);
+      });
 
     }
-
-    return this.dadosCliente;
 
   }
 

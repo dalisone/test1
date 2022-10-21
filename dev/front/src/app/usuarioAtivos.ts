@@ -1,6 +1,10 @@
 export interface UsuarioAtivos
 {
     id: number,
+    idUsuario: number,
+    nome: string,
+    dataNasc: string,
+    gerente: number
     usuario: {
         id:number,
         dataNasc: string,

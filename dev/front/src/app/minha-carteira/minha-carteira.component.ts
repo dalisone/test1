@@ -137,7 +137,7 @@ export class MinhaCarteiraComponent implements OnInit {
 
     let quantia = document.getElementById("valor") as HTMLInputElement;
 
-    if(quantia.value < "1"){
+    if(quantia.value < "0"){
       return alert("Insira um valor positivo!")
     }
 

@@ -41,6 +41,32 @@ public class UsuarioController : ControllerBase
 
     }
 
+    [HttpPost]
+    [Route("getIdByName")]
+    public IActionResult GetIdByName([FromBody] UsuarioDTO name){
+
+        if(name != null && name.Nome!=null){
+            
+            var usuario = Model.Usuario.FindByName(name.Nome);
+
+            if(usuario != null){
+
+                return new ObjectResult(new {
+                    id = usuario
+                }){
+                };
+            }
+            else{
+                return BadRequest("Invalid credentials");
+            }
+        }
+        else{
+            return BadRequest("Empty credentials");
+        }
+
+
+    }
+
     [HttpGet]
     [Route("getByType")]
     public object GetInformationsByType(){
