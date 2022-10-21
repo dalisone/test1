@@ -10,6 +10,7 @@ public class Usuario_Ativo {
     public Ativos Ativo{get; set;}
     public decimal Saldo {get; set;}
 
+    // Funçao para salvar no banco de dados
     public int Save(int UsuarioId, int AtivoId){
 
         using(var context = new Context()){
@@ -31,6 +32,7 @@ public class Usuario_Ativo {
 
     }
 
+    // Funçao para trazer todos os ativos que um usuario possui
     public static List<object> FindById(int id){
 
         using(var context = new Context()){
@@ -49,6 +51,7 @@ public class Usuario_Ativo {
 
     }
 
+    // Funcao para retornar ativo especifico do usuario
     public static List<object> FindUserAtivo(int idUsuario, int idAtivo){
 
         using(var context = new Context()){
@@ -67,7 +70,7 @@ public class Usuario_Ativo {
 
     }
 
-
+    // Funcao para retornar todas os usuarios e seus respectivos ativos
     public static List<object> FindAll(){
 
         using(var context = new Context()){
@@ -86,6 +89,7 @@ public class Usuario_Ativo {
 
     }
 
+    // Funcao utilizada para mudar o saldo dos ativos
     public static void MudaSaldo(Usuario_Ativo usuarioAtivo, int id){
 
         using(var context = new Context()){
@@ -102,6 +106,7 @@ public class Usuario_Ativo {
 
     }
 
+    // Funcao utilizada para deletar um ativo de um usuario especifico do banco
     public static void Delete(int id){
 
         using(var context = new Context()){

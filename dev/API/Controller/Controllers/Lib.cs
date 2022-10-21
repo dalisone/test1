@@ -4,6 +4,7 @@ namespace Controller;
 
 public class Lib
 {
+    // Funcao utilizada para pegar o Id do usuario logado no momento decodificando o token
     public static int GetIdFromRequest(string TokenFromHead)
     {
 

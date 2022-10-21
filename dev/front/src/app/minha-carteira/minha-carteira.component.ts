@@ -42,6 +42,14 @@ export class MinhaCarteiraComponent implements OnInit {
 
   ngOnInit(): void {
 
+    if(localStorage.getItem("authTokenClient") == null){
+      alert("Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...")
+      localStorage.removeItem('authTokenClient')
+      localStorage.removeItem('authTokenGerente')
+      localStorage.removeItem('authTokenAdm')
+      this.router.navigate([''])
+    }
+
     var data = JSON.stringify({
       
     });
@@ -122,6 +130,7 @@ export class MinhaCarteiraComponent implements OnInit {
 
   }
 
+  // Funcao para resgatar o Id do Ativo
   PegarIdAtivo(){
 
     let select = document.getElementById("GrupoAtivo") as HTMLSelectElement;
@@ -131,6 +140,8 @@ export class MinhaCarteiraComponent implements OnInit {
 
   }
 
+
+  // Funcao para poder somar o saldo
   AddSaldo(){
 
     var idAtivo = this.PegarIdAtivo()
@@ -256,6 +267,7 @@ export class MinhaCarteiraComponent implements OnInit {
 
   }
 
+  // Funcao para poder subtrair o saldo
   DiminuirSaldo(){
 
     var idAtivo = this.PegarIdAtivo()

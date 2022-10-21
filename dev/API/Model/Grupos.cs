@@ -8,6 +8,7 @@ public class Grupos{
     public int Id {get; set;}
     public string Nome {get; set;}
 
+    // Funçao para salvar no banco de dados
     public int Save(){
 
         int Id = 0;
@@ -29,6 +30,7 @@ public class Grupos{
 
     }
 
+    // Funçao de busca para trazer todos os objetos
     public static List<object> FindAll(){
 
         using(var context = new Context()){

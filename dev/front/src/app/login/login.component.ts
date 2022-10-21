@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Funcao para validar os dados de login chamando a requisiçao
   login(){
     let login = document.getElementById("login") as HTMLInputElement;
     let senha = document.getElementById("password") as HTMLInputElement;

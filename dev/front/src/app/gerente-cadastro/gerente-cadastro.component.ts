@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios'
 import { Usuario } from '../usuario';
+import {Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-gerente-cadastro',
@@ -12,7 +13,7 @@ export class GerenteCadastroComponent implements OnInit {
   usuario : Usuario
   gerentes : Array<Usuario> = []
 
-  constructor() { 
+  constructor(private router: Router) { 
 
     this.usuario = {
 
@@ -29,6 +30,14 @@ export class GerenteCadastroComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    if(localStorage.getItem("authTokenAdm") == null){
+      alert("Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...")
+      localStorage.removeItem('authTokenClient')
+      localStorage.removeItem('authTokenGerente')
+      localStorage.removeItem('authTokenAdm')
+      this.router.navigate([''])
+    }
 
     var data = JSON.stringify({
       
@@ -56,9 +65,8 @@ export class GerenteCadastroComponent implements OnInit {
       console.log(error);
     });
 
-    var data2 = JSON.stringify({
-      
-    });
+
+
     var config = {
       method: 'get',
       url: 'http://localhost:5232/usuario/getByType',
@@ -86,7 +94,7 @@ export class GerenteCadastroComponent implements OnInit {
 
   }
 
-
+  //Funcao para registrar novos gerentes no banco de dados
   registrar(){
 
     let nome = document.getElementById("name") as HTMLInputElement;

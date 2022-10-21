@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
 import { Ativos } from '../ativos';
 import { Grupos } from '../grupos';
+import {Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-ativos-cadastro',
@@ -13,11 +14,19 @@ export class AtivosCadastroComponent implements OnInit {
   ativos : Array<Ativos> = []; 
   grupos : Array<Grupos> = [];
 
-  constructor() {
+  constructor(private router: Router) {
 
    }
 
   ngOnInit(): void {
+
+    if(localStorage.getItem("authTokenAdm") == null){
+      alert("Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...")
+      localStorage.removeItem('authTokenClient')
+      localStorage.removeItem('authTokenGerente')
+      localStorage.removeItem('authTokenAdm')
+      this.router.navigate([''])
+    }
 
     var data = JSON.stringify({
       
@@ -41,9 +50,9 @@ export class AtivosCadastroComponent implements OnInit {
       console.log(error);
     });
 
-    var data2 = JSON.stringify({
-      
-    });
+
+    var data2 = JSON.stringify({});
+
     var config2= {
       method: 'get',
       url: 'http://localhost:5232/grupos/getAll',
@@ -64,6 +73,7 @@ export class AtivosCadastroComponent implements OnInit {
 
   }
 
+  // Funcao para registrar novos ativos no banco de dados
   registrar(){
 
     let select = document.getElementById("selectGrupos") as HTMLSelectElement;

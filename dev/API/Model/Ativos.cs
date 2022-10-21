@@ -10,6 +10,7 @@ public class Ativos{
     public string Nome{get; set;}
     public Grupos Grupo{get; set;}
 
+    // Funçao para salvar no banco de dados
     public int Save(int GrupoId){
 
         using(var context = new Context()){
@@ -32,7 +33,7 @@ public class Ativos{
     }
 
     
-
+    // Funçao de busca para trazer todos os objetos
     public static List<object> FindAll(){
 
         using(var context = new Context()){

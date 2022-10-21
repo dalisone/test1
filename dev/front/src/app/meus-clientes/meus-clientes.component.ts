@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioAtivos } from '../usuarioAtivos';
 import axios from 'axios';
+import {Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-meus-clientes',
@@ -15,9 +16,17 @@ export class MeusClientesComponent implements OnInit {
   usuarioId : number = 0
   gerenteId: number = 0
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+
+    if(localStorage.getItem("authTokenGerente") == null){
+      alert("Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...")
+      localStorage.removeItem('authTokenClient')
+      localStorage.removeItem('authTokenGerente')
+      localStorage.removeItem('authTokenAdm')
+      this.router.navigate([''])
+    }
 
     var data2 = JSON.stringify({
       
@@ -70,6 +79,7 @@ export class MeusClientesComponent implements OnInit {
 
   }
 
+  // Funcao para cadastrar novos clientes no banco de dados
   cadastrar(){
 
     let nome = document.getElementById("name") as HTMLInputElement;
@@ -115,6 +125,7 @@ export class MeusClientesComponent implements OnInit {
 
   }
 
+  // Funcao para resgatar Id do novo usuario recém cadastrado no banco de dados
   pegarId(nome: string){
 
     var data2 = JSON.stringify({
@@ -144,7 +155,7 @@ export class MeusClientesComponent implements OnInit {
 
   }
 
-
+  // Funcao ativada automaticamente ao cadastrar para fazer o cadastro dos Ativos padrões dos clientes
   cadastrarAtivos(id: number){
 
     for(var i = 0; i < this.saldos.length; i++){

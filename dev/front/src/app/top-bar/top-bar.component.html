@@ -12,6 +12,11 @@
       </button>
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li *ngIf="TokenAdm != null" class="nav-item">
+              <a class="nav-link" href="adm-landing">ADM-landing</a>
+            </li>
+          </ul>
           <ul class="navbar-nav ms-auto">
             <li *ngIf="TokenCliente != null" class="nav-item nav-link">
               Cliente

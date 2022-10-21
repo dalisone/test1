@@ -17,6 +17,7 @@ public class Usuario
     public int Gerente {get; set;}
 
 
+    // Funçao para salvar no banco de dados
     public int Save(){
 
         int Id = 0;
@@ -43,6 +44,7 @@ public class Usuario
 
     }
 
+    // Funçao para validar as informaçoes de login
     public static Usuario FindByUser(string login, string senha){
 
         using (var context = new Context()){
@@ -57,6 +59,7 @@ public class Usuario
 
     }
 
+    // Funçao para retornar todos os usuario que possuem relaçao com o gerente
     public static List<object> FindByGerente(int id){
         
         using(var context = new Context()){
@@ -85,6 +88,7 @@ public class Usuario
 
     }
 
+    //Funçao para encontrar o usuario pelo Id
     public static object FindByID(int id){
 
         using(var context = new Context()){
@@ -106,6 +110,7 @@ public class Usuario
 
     }
 
+    // Funçao de busca para retornar o Id do usuario, passando o nome como parametro
     public static int FindByName(string name){
 
         using(var context = new Context()){
@@ -117,6 +122,7 @@ public class Usuario
 
     }
 
+    // Funçao de busca para trazer somente gerentes
      public static List<object> FindByType(){
 
         using(var context = new Context()){
@@ -134,6 +140,7 @@ public class Usuario
 
     }
 
+    // Funçao de busca para trazer todos os objetos
     public static List<object> FindAll(){
 
         using(var context = new Context()){
