@@ -1,0 +1,37 @@
+<app-top-bar></app-top-bar>
+<div class="principal">
+    <div class="titulo">
+        <h1>
+            Cadastro de Ativos
+        </h1>
+    </div>
+    <div class="caixa-filtro">
+        <div class="nome">
+            <input type="text" class="namefield" id="name" placeholder="Nome do Ativo">
+        </div>
+      <div class="filtro">
+        <h1>Grupo de Ativo:</h1>
+        <select id="selectGrupos" class="filter">
+            <option *ngFor="let item of grupos" value="{{item.id}}">{{item.nome}}</option>
+        </select>
+        <button type="button" class="btn btn-success" (click)="registrar()">Salvar</button>
+      </div>
+    </div>
+    <div class="tabela">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+            <th>Ativo</th>
+            <th>Grupo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of ativos">
+              <td>{{item.nome}}</td>
+              <td>{{item.grupo.nome}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  

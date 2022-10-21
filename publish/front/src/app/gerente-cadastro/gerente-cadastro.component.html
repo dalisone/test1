@@ -1,0 +1,35 @@
+<app-top-bar></app-top-bar>
+<div class="principal">
+    <div class="titulo">
+        <h1>
+            Cadastro de Gerentes
+        </h1>
+    </div>
+    <div class="caixa-filtro">
+        <div class="nome">
+            <input type="text" class="namefield" id="name" placeholder="Nome Completo">
+        </div>
+      <div class="filtro">
+        <h1>Data de nascimento:</h1>
+        <input class="filter" type="text" id="date" placeholder="Data de Nascimento"  onfocus="(this.type='date')"/>
+        <button type="button" class="btn btn-success" (click)="registrar()">Salvar</button>
+      </div>
+    </div>
+    <div class="tabela">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of gerentes">
+              <td>{{item.nome}}</td>
+              <td>{{item.dataNasc}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  

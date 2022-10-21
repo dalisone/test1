@@ -1,0 +1,36 @@
+E:\dabia\test1\dev\API\DTO\bin\Debug\net6.0\DTO.deps.json
+E:\dabia\test1\dev\API\DTO\bin\Debug\net6.0\DTO.dll
+E:\dabia\test1\dev\API\DTO\bin\Debug\net6.0\DTO.pdb
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.dll
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\refint\DTO.dll
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\DTO.pdb
+E:\dabia\test1\dev\API\DTO\obj\Debug\net6.0\ref\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\DTO\obj\Debug\net6.0\ref\DTO.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\DTO\obj\Debug\net6.0\ref\DTO.dll

@@ -1,0 +1,207 @@
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cs
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cache
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.Development.json
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.json
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Controller.exe
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Controller.deps.json
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Controller.runtimeconfig.json
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Controller.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Controller.pdb
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Model.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\Model.pdb
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.build.json
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.development.json
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\scopedcss\bundle\Controller.styles.css
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.dll
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\refint\Controller.dll
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.pdb
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
+E:\dabia\test1\dev\API\Controller\obj\Debug\net6.0\ref\Controller.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\DTO.dll
+E:\dabia\test1\dev\API\Controller\bin\Debug\net6.0\DTO.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Controller.exe
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Controller.runtimeconfig.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Controller.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Controller.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Model.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\Model.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\bin\Debug\net6.0\DTO.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\scopedcss\bundle\Controller.styles.css
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.pdb
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
+C:\Users\OLL2CT\Desktop\Projetos\test1\dev\API\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\appsettings.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Controller.exe
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Controller.runtimeconfig.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Controller.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Controller.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\DTO.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Model.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\Model.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\bin\Debug\net6.0\DTO.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\scopedcss\bundle\Controller.styles.css
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.pdb
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
+C:\Users\aliso\Desktop\projetos\INFO Invest\test1\dev\API\Controller\obj\Debug\net6.0\ref\Controller.dll
