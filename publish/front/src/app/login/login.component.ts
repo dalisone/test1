@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
     var data = JSON.stringify({
       "login": login?.value,
       "senha": senha?.value,
-      "tipo" : "",
-      "dataNasc" : Date,
+      "tipo" : 0,
+      "dataNasc" : new Date(),
       "nome" : "",
       "gerente": 0
     });
