@@ -1,0 +1,2197 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Ativos",
+            "id": "interface-Ativos-fab5cf9583640e1592311bd64d327ce36f9eaf355f6e49f26c16ca1e5ada4fdfd65a273bde20771191bdd2f637d5bd3dfa4fdfcd4dba180c61cc7fd0f29f290d",
+            "file": "src/app/ativos.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Ativos{\r\n\r\n    id: number,\r\n    nome: string,\r\n    grupo: {\r\n        id: number,\r\n        nome: string\r\n    }\r\n}",
+            "properties": [
+                {
+                    "name": "grupo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "nome",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Grupos",
+            "id": "interface-Grupos-005a60e7080aacff834c7bceb9926f14a36aeab7590ac6cfa38848a112878051b8e0d94043124289786810436fca39a84d3a9bb15f18ab2bd0faf9ed6644ea24",
+            "file": "src/app/grupos.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Grupos{\r\n\r\n    id: number,\r\n    nome: string,\r\n}",
+            "properties": [
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "nome",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        },
+        {
+            "name": "Usuario",
+            "id": "interface-Usuario-454f872afa9a5df96467782a61c97a4e59011e1ca871ce928e80b7fb27870dde9a46d45ba1fade6a17081a3d498247f0f2656803c6211fe911bdb1833800405e",
+            "file": "src/app/usuario.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Usuario{\r\n\r\n    id:number,\r\n    dataNasc: string,\r\n    nome: string,\r\n    tipo: number,\r\n    login: string,\r\n    senha: string,\r\n    gerente: number\r\n\r\n}",
+            "properties": [
+                {
+                    "name": "dataNasc",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "gerente",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "login",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "nome",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "senha",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "tipo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "UsuarioAtivos",
+            "id": "interface-UsuarioAtivos-2622a93dabaf04018378142fa4dc1b154aa2a0d6a5e9e38c8bbc06a2fd94e53796b59daeeb0f9acc1dbc616f7dcd8ce23570dcfa9b875ab4e279de84af3b9580",
+            "file": "src/app/usuarioAtivos.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface UsuarioAtivos\r\n{\r\n    id: number,\r\n    idUsuario: number,\r\n    nome: string,\r\n    dataNasc: string,\r\n    gerente: number\r\n    usuario: {\r\n        id:number,\r\n        dataNasc: string,\r\n        nome: string\r\n    },\r\n    ativo: {\r\n        id:number,\r\n        nome:string,\r\n        grupo: {\r\n            id:number,\r\n            nome: string\r\n        }\r\n    },\r\n    saldo: number\r\n}",
+            "properties": [
+                {
+                    "name": "ativo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "dataNasc",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "gerente",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "idUsuario",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "nome",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "saldo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "usuario",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AdminLandingComponent",
+            "id": "component-AdminLandingComponent-05330e7a36c8cb6c18f82100871d4e7400e3501018bcecc0cff1e7db98ec7e2d20fc3f59ae10724f7c8a4b05746a34934cf460005a2913704252f4bef084ca4b",
+            "file": "src/app/admin-landing/admin-landing.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-admin-landing",
+            "styleUrls": [
+                "./admin-landing.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./admin-landing.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport {Route, Router} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-admin-landing',\r\n  templateUrl: './admin-landing.component.html',\r\n  styleUrls: ['./admin-landing.component.css']\r\n})\r\nexport class AdminLandingComponent implements OnInit {\r\n\r\n  constructor(private router: Router) { }\r\n\r\n  ngOnInit(): void {\r\n    if(localStorage.getItem(\"authTokenAdm\") == null){\r\n      alert(\"Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...\")\r\n      localStorage.removeItem('authTokenClient')\r\n      localStorage.removeItem('authTokenGerente')\r\n      localStorage.removeItem('authTokenAdm')\r\n      this.router.navigate([''])\r\n    }\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".container {\r\n    width:100%;\r\n    height:100%;\r\n}\r\n\r\n.botao1 {\r\n    width: 45%;\r\n    float: left;\r\n    padding: 15px;\r\n}\r\n\r\n.botao2 {\r\n    width: 45%;\r\n    float: right;\r\n    padding: 15px;\r\n}\r\n\r\n.botao1 button{\r\n    width: 200px;\r\n    padding: 35px;\r\n}\r\n\r\n.botao2 button{\r\n    width: 200px;\r\n    padding: 35px;\r\n}\r\n\r\n@media (max-width: 990px){\r\n    .botao2, .botao1 {\r\n        width: 100%;\r\n    }\r\n}",
+                    "styleUrl": "./admin-landing.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 9,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"container\">\r\n    <div class=\"botao1 text-center\">\r\n        <a href=\"gerente-cadastro\"><button type=\"button\" class=\"btn btn-success btn-lg\">Gerentes</button></a>\r\n    </div>\r\n    <div class=\"botao2 text-center\">\r\n        <a href=\"atv-cadastro\"><button type=\"button\" class=\"btn btn-success btn-lg\">Ativos</button></a>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-ae6998202f42fb38f0c5f26e1b9bd18ce181db2e709e86e927fbf1fe8bac09a471828a19b075003cead60a5a6206347495aafaf777b74996df4c974e0bd14865",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'front'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.css']\r\n})\r\nexport class AppComponent {\r\n  title = 'front';\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div>\r\n  <router-outlet>\r\n    \r\n  </router-outlet>\r\n</div>"
+        },
+        {
+            "name": "AtivosCadastroComponent",
+            "id": "component-AtivosCadastroComponent-ba3c8a551977fb64b1393525bba7dc3b9016c8cdd46c007e6a1aa15b23e2012832184c6e9e7e6f8972751905ed2c3d721cb4fc6751a5a735acb27c1f75e8b5dd",
+            "file": "src/app/ativos-cadastro/ativos-cadastro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-ativos-cadastro",
+            "styleUrls": [
+                "./ativos-cadastro.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ativos-cadastro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "ativos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<Ativos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "grupos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<Grupos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registrar",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 77,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport axios from 'axios';\r\nimport { Ativos } from '../ativos';\r\nimport { Grupos } from '../grupos';\r\nimport {Route, Router} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-ativos-cadastro',\r\n  templateUrl: './ativos-cadastro.component.html',\r\n  styleUrls: ['./ativos-cadastro.component.css']\r\n})\r\nexport class AtivosCadastroComponent implements OnInit {\r\n\r\n  ativos : Array<Ativos> = []; \r\n  grupos : Array<Grupos> = [];\r\n\r\n  constructor(private router: Router) {\r\n\r\n   }\r\n\r\n  ngOnInit(): void {\r\n\r\n    if(localStorage.getItem(\"authTokenAdm\") == null){\r\n      alert(\"Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...\")\r\n      localStorage.removeItem('authTokenClient')\r\n      localStorage.removeItem('authTokenGerente')\r\n      localStorage.removeItem('authTokenAdm')\r\n      this.router.navigate([''])\r\n    }\r\n\r\n    var data = JSON.stringify({\r\n      \r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/ativos/getAll',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      self.ativos = response.data\r\n      console.log(self.ativos)\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n\r\n    var data2 = JSON.stringify({});\r\n\r\n    var config2= {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/grupos/getAll',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data2\r\n    };\r\n    axios(config2)\r\n    .then(function (response:any) {\r\n      self.grupos = response.data\r\n      console.log(self.grupos)\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  // Funcao para registrar novos ativos no banco de dados\r\n  registrar(){\r\n\r\n    let select = document.getElementById(\"selectGrupos\") as HTMLSelectElement;\r\n    let option = select.options[select.selectedIndex];\r\n\r\n    let nome = document.getElementById(\"name\") as HTMLInputElement;\r\n\r\n    var data = JSON.stringify({\r\n      \"id\" : 0,\r\n      \"nome\" : nome.value,\r\n      \"grupo\":{\r\n        \"id\": option.value,\r\n        \"nome\": \"\"\r\n      }\r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'post',\r\n      url: 'http://localhost:5232/ativos/register',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      window.location.reload()\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  }\r\n\r\n  \r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".principal{\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n}\r\n.tabela{\r\n    width: 80%;\r\n}\r\ntable{\r\n    width: 100%;\r\n}\r\n.caixa-filtro{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.titulo{\r\n    padding: 5px;\r\n    margin-bottom: 2%;\r\n}\r\n.filtro{\r\n    width: 50%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: flex-end;\r\n}\r\n.filtro h1{\r\n    font-size: 18px;\r\n    margin-right: 10px;\r\n    margin-top: 5px;\r\n}\r\n.filter{\r\n    padding: 5px;\r\n    margin-right: 11%;\r\n}\r\n\r\n.nome{\r\n    width: 30%;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: baseline;\r\n}\r\n\r\n.nome input{\r\n    padding: 5px;\r\n    width: 100%;\r\n}",
+                    "styleUrl": "./ativos-cadastro.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 15,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"principal\">\r\n    <div class=\"titulo\">\r\n        <h1>\r\n            Cadastro de Ativos\r\n        </h1>\r\n    </div>\r\n    <div class=\"caixa-filtro\">\r\n        <div class=\"nome\">\r\n            <input type=\"text\" class=\"namefield\" id=\"name\" placeholder=\"Nome do Ativo\">\r\n        </div>\r\n      <div class=\"filtro\">\r\n        <h1>Grupo de Ativo:</h1>\r\n        <select id=\"selectGrupos\" class=\"filter\">\r\n            <option *ngFor=\"let item of grupos\" value=\"{{item.id}}\">{{item.nome}}</option>\r\n        </select>\r\n        <button type=\"button\" class=\"btn btn-success\" (click)=\"registrar()\">Salvar</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"tabela\">\r\n        <table class=\"table table-striped\">\r\n          <thead>\r\n            <tr>\r\n            <th>Ativo</th>\r\n            <th>Grupo</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let item of ativos\">\r\n              <td>{{item.nome}}</td>\r\n              <td>{{item.grupo.nome}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n    </div>\r\n  </div>\r\n  "
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "GerenteCadastroComponent",
+            "id": "component-GerenteCadastroComponent-8e9ccca81d0d41023e263a773e3888488ad79fbd1ab429393bf8d6a3246d491314cf5c09f29f5575339b7b5f42d8fea4049ebf746c74a3bf1d82649ced8d1b4f",
+            "file": "src/app/gerente-cadastro/gerente-cadastro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-gerente-cadastro",
+            "styleUrls": [
+                "./gerente-cadastro.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./gerente-cadastro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "gerentes",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<Usuario>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "usuario",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Usuario",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registrar",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 98,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport axios from 'axios'\r\nimport { Usuario } from '../usuario';\r\nimport {Route, Router} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-gerente-cadastro',\r\n  templateUrl: './gerente-cadastro.component.html',\r\n  styleUrls: ['./gerente-cadastro.component.css']\r\n})\r\nexport class GerenteCadastroComponent implements OnInit {\r\n\r\n  usuario : Usuario\r\n  gerentes : Array<Usuario> = []\r\n\r\n  constructor(private router: Router) { \r\n\r\n    this.usuario = {\r\n\r\n      id: 0,\r\n      nome: \"\",\r\n      dataNasc: \"\",\r\n      senha: \"\",\r\n      login: \"\",\r\n      tipo: 0,\r\n      gerente : 0\r\n\r\n    }\r\n\r\n  }\r\n\r\n  ngOnInit(): void {\r\n\r\n    if(localStorage.getItem(\"authTokenAdm\") == null){\r\n      alert(\"Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...\")\r\n      localStorage.removeItem('authTokenClient')\r\n      localStorage.removeItem('authTokenGerente')\r\n      localStorage.removeItem('authTokenAdm')\r\n      this.router.navigate([''])\r\n    }\r\n\r\n    var data = JSON.stringify({\r\n      \r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuario/getById',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      self.usuario = response.data;\r\n      let dataNova = self.usuario.dataNasc.substring(0,10).toString();\r\n      let year = dataNova.substring(0,4);\r\n      let DataAtual = new Date();\r\n      let AnoAtual = DataAtual.getFullYear();\r\n      self.usuario.dataNasc = (AnoAtual  - parseInt(year)).toString();\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n\r\n\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuario/getByType',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      console.log(response.data)\r\n      self.gerentes = response.data\r\n      for(var i =0; i < self.gerentes.length; i++){\r\n        let dataNova = self.gerentes[i].dataNasc.substring(0,10).toString();\r\n        let year = dataNova.substring(0,4);\r\n        let DataAtual = new Date();\r\n        let AnoAtual = DataAtual.getFullYear();\r\n        self.gerentes[i].dataNasc = (AnoAtual  - parseInt(year)).toString();\r\n      }\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  //Funcao para registrar novos gerentes no banco de dados\r\n  registrar(){\r\n\r\n    let nome = document.getElementById(\"name\") as HTMLInputElement;\r\n\r\n    let dataNascimento = document.getElementById(\"date\") as HTMLInputElement;\r\n\r\n    let primeiroNome = (nome.value).substring(0, (nome.value).indexOf(\" \"))\r\n    \r\n    if((nome.value).indexOf(\" \") == -1){\r\n      primeiroNome = nome.value\r\n    }\r\n\r\n\r\n    var data = JSON.stringify({\r\n      \"id\" : 0,\r\n      \"dataNasc\" : dataNascimento?.value + \"T00:00:00.000Z\",\r\n      \"nome\" : nome?.value,\r\n      \"tipo\" : 1,\r\n      \"login\" : \"login_\" + primeiroNome,\r\n      \"senha\" : \"senha_\" + primeiroNome,\r\n      \"gerente\" : 0\r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'post',\r\n      url: 'http://localhost:5232/usuario/register',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      window.location.reload()\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".principal{\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n}\r\n.tabela{\r\n    width: 80%;\r\n}\r\ntable{\r\n    width: 100%;\r\n}\r\n.caixa-filtro{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.titulo{\r\n    padding: 5px;\r\n    margin-bottom: 2%;\r\n}\r\n.filtro{\r\n    width: 50%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: end;\r\n}\r\n.filtro h1{\r\n    font-size: 18px;\r\n    margin-right: 10px;\r\n    margin-top: 5px;\r\n}\r\n.filter{\r\n    padding: 5px;\r\n    margin-right: 11%;\r\n}\r\n\r\n.nome{\r\n    width: 30%;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: baseline;\r\n}\r\n\r\n.nome input{\r\n    padding: 5px;\r\n    width: 100%;\r\n}",
+                    "styleUrl": "./gerente-cadastro.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"principal\">\r\n    <div class=\"titulo\">\r\n        <h1>\r\n            Cadastro de Gerentes\r\n        </h1>\r\n    </div>\r\n    <div class=\"caixa-filtro\">\r\n        <div class=\"nome\">\r\n            <input type=\"text\" class=\"namefield\" id=\"name\" placeholder=\"Nome Completo\">\r\n        </div>\r\n      <div class=\"filtro\">\r\n        <h1>Data de nascimento:</h1>\r\n        <input class=\"filter\" type=\"text\" id=\"date\" placeholder=\"Data de Nascimento\"  onfocus=\"(this.type='date')\"/>\r\n        <button type=\"button\" class=\"btn btn-success\" (click)=\"registrar()\">Salvar</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"tabela\">\r\n        <table class=\"table table-striped\">\r\n          <thead>\r\n            <tr>\r\n            <th>Nome</th>\r\n            <th>Idade</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let item of gerentes\">\r\n              <td>{{item.nome}}</td>\r\n              <td>{{item.dataNasc}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n    </div>\r\n  </div>\r\n  "
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "LoginComponent",
+            "id": "component-LoginComponent-38f417965a4920f8654e8fd3959c2f94d374c2f26da967d2544798cc471b10a20d8cf481498c458ee15137c239fa46c0169a7299cd977f3d7ed42973469cf278",
+            "file": "src/app/login/login.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-login",
+            "styleUrls": [
+                "./login.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./login.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "login",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport axios from 'axios';\r\nimport {Route, Router} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-login',\r\n  templateUrl: './login.component.html',\r\n  styleUrls: ['./login.component.css']\r\n})\r\nexport class LoginComponent implements OnInit {\r\n\r\n  constructor(private router: Router) { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  //Funcao para validar os dados de login chamando a requisiçao\r\n  login(){\r\n    let login = document.getElementById(\"login\") as HTMLInputElement;\r\n    let senha = document.getElementById(\"password\") as HTMLInputElement;\r\n\r\n    var data = JSON.stringify({\r\n      \"login\": login?.value,\r\n      \"senha\": senha?.value,\r\n      \"tipo\" : \"\",\r\n      \"dataNasc\" : Date,\r\n      \"nome\" : \"\",\r\n      \"gerente\": 0\r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'post',\r\n      url: 'http://localhost:5232/usuario/login',\r\n      headers: { \r\n        'Content-Type': 'application/json'\r\n      },\r\n      data : data\r\n    };\r\n\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      if(response.data.tipo == 0){\r\n        localStorage.setItem('authTokenClient', response.data.token)\r\n       self.router.navigate(['minha-carteira']);\r\n      }\r\n      else if(response.data.tipo == 1){\r\n        localStorage.setItem('authTokenGerente', response.data.token)\r\n        self.router.navigate(['meus-clientes']);\r\n      }\r\n      else if(response.data.tipo == 2){\r\n        localStorage.setItem('authTokenAdm', response.data.token)\r\n        self.router.navigate(['adm-landing']);\r\n      }\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "h2{\r\n    font-size: 45px;\r\n}\r\n\r\np{\r\n    font-size: 1.5em;\r\n}\r\n\r\n.login{\r\n    text-align: center;\r\n\r\n}\r\n.loginInput{\r\n    size: 200px;\r\n    margin-bottom: 1%;\r\n}\r\n\r\n.loginInput input{\r\n    width: 18%;\r\n    padding: 5px;\r\n}\r\n\r\n.passwordInput{\r\n    margin-bottom: 1.7%;\r\n}\r\n\r\n.passwordInput input{\r\n    width: 18%;\r\n    padding: 5px;\r\n}\r\n\r\n@media (max-width: 991px) {\r\n    .loginInput input {\r\n        width: 200px;\r\n      }\r\n\r\n    .passwordInput input {\r\n      width: 200px;\r\n    }\r\n\r\n    .passwordInput{\r\n        margin-bottom: 7%;\r\n    }\r\n  }\r\n\r\n.sub{\r\n    margin-top: 2%;\r\n    margin-bottom: 0;\r\n}\r\n.link{\r\n    color: gray;\r\n    cursor: pointer;\r\n}\r\n.button, button {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    padding: 8px 16px;\r\n    border-radius: 2px;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    background-color: #1976d2;\r\n    color: white;\r\n    border: none;\r\n  }\r\n  \r\n  .button:hover, button:hover {\r\n    opacity: 0.8;\r\n    font-weight: normal;\r\n  }\r\n  \r\n  .button:disabled, button:disabled {\r\n    opacity: 0.5;\r\n    cursor: auto;\r\n  }\r\n  \r\n  /* Fancy Button */\r\n  \r\n  .fancy-button {\r\n    background-color: white;\r\n    color: #1976d2;\r\n  }\r\n  \r\n  .fancy-button i.material-icons {\r\n    color: #1976d2;\r\n    padding-right: 4px;\r\n  }",
+                    "styleUrl": "./login.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"login\">\r\n   <form>\r\n\r\n        <h2>Bem-Vindo</h2>\r\n        <p>Realize seu login para continuar</p>\r\n       <div class=\"loginInput\">\r\n           <input type=\"text\" id=\"login\" placeholder=\"Usuário\" />\r\n       </div>\r\n\r\n       <div class=\"passwordInput\">\r\n            <input type=\"password\" id=\"password\" placeholder=\"Senha\" />\r\n        </div>\r\n        <div class=\"buttonsInput\">\r\n            <button type=\"button\" class=\"btn btn-primary\" (click)=\"login()\">Logar</button>\r\n        </div>\r\n   </form>\r\n</div>"
+        },
+        {
+            "name": "MeusClientesComponent",
+            "id": "component-MeusClientesComponent-e8170900518dc992c996e811606386a8587b9d9b2b9febd5160c535e31851e8a78f7cffd8f44539aa3fc63be8e61b3843d9ac03df1968e6a5f494ec53e9434b6",
+            "file": "src/app/meus-clientes/meus-clientes.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-meus-clientes",
+            "styleUrls": [
+                "./meus-clientes.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./meus-clientes.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "clientes",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<UsuarioAtivos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "gerenteId",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "nome",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "saldos",
+                    "defaultValue": "[100,50,200]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<number>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "usuarioId",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "cadastrar",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 83,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "cadastrarAtivos",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 159,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "pegarId",
+                    "args": [
+                        {
+                            "name": "nome",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 129,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "nome",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { UsuarioAtivos } from '../usuarioAtivos';\r\nimport axios from 'axios';\r\nimport {Route, Router} from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-meus-clientes',\r\n  templateUrl: './meus-clientes.component.html',\r\n  styleUrls: ['./meus-clientes.component.css']\r\n})\r\nexport class MeusClientesComponent implements OnInit {\r\n\r\n  clientes : Array<UsuarioAtivos> = [];\r\n  saldos: Array<number> = [100,50,200];\r\n  nome : string = \"\"\r\n  usuarioId : number = 0\r\n  gerenteId: number = 0\r\n\r\n  constructor(private router: Router) { }\r\n\r\n  ngOnInit(): void {\r\n\r\n    if(localStorage.getItem(\"authTokenGerente\") == null){\r\n      alert(\"Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...\")\r\n      localStorage.removeItem('authTokenClient')\r\n      localStorage.removeItem('authTokenGerente')\r\n      localStorage.removeItem('authTokenAdm')\r\n      this.router.navigate([''])\r\n    }\r\n\r\n    var data2 = JSON.stringify({\r\n      \r\n    });\r\n    var config2 = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuario/getById',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenGerente')\r\n      },\r\n      data : data2\r\n    };\r\n    axios(config2)\r\n    .then(function (response:any) {\r\n      self.gerenteId = response.data.id;\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n    var data = JSON.stringify({\r\n      \r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuario/getClientes',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenGerente')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      self.clientes = response.data\r\n      for(var i =0; i < self.clientes.length; i++){\r\n        let dataNova = self.clientes[i].dataNasc.substring(0,10).toString();\r\n        let year = dataNova.substring(0,4);\r\n        let DataAtual = new Date();\r\n        let AnoAtual = DataAtual.getFullYear();\r\n        self.clientes[i].dataNasc = (AnoAtual  - parseInt(year)).toString();\r\n        \r\n      }\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  // Funcao para cadastrar novos clientes no banco de dados\r\n  cadastrar(){\r\n\r\n    let nome = document.getElementById(\"name\") as HTMLInputElement;\r\n\r\n    let dataNascimento = document.getElementById(\"date\") as HTMLInputElement;\r\n\r\n    let primeiroNome = (nome.value).substring(0, (nome.value).indexOf(\" \"))\r\n\r\n    let self = this\r\n    \r\n    if((nome.value).indexOf(\" \") == -1){\r\n      primeiroNome = nome.value\r\n    }\r\n\r\n    console.log(self.gerenteId)\r\n\r\n    var data = JSON.stringify({\r\n      \"id\" : 0,\r\n      \"dataNasc\" : dataNascimento?.value + \"T00:00:00.000Z\",\r\n      \"nome\" : nome?.value,\r\n      \"tipo\" : 0,\r\n      \"login\" : \"login_\" + primeiroNome,\r\n      \"senha\" : \"senha_\" + primeiroNome,\r\n      \"gerente\" : self.gerenteId\r\n    });\r\n    var config = {\r\n      method: 'post',\r\n      url: 'http://localhost:5232/usuario/register',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenAdm')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      self.pegarId(nome.value)\r\n      console.log(response.data)\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  // Funcao para resgatar Id do novo usuario recém cadastrado no banco de dados\r\n  pegarId(nome: string){\r\n\r\n    var data2 = JSON.stringify({\r\n      \"nome\" : nome,\r\n      \"dataNasc\" : new Date(),\r\n      \"login\": \"\",\r\n      \"senha\": \"\"\r\n    });\r\n    let self = this;\r\n    var config2 = {\r\n      method: 'post',\r\n      url: 'http://localhost:5232/usuario/getIdByName',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenGerente')\r\n      },\r\n      data : data2\r\n    };\r\n    axios(config2)\r\n    .then(function (response:any) {\r\n      self.usuarioId = response.data.id\r\n      self.cadastrarAtivos(self.usuarioId)\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  // Funcao ativada automaticamente ao cadastrar para fazer o cadastro dos Ativos padrões dos clientes\r\n  cadastrarAtivos(id: number){\r\n\r\n    for(var i = 0; i < this.saldos.length; i++){\r\n      \r\n\r\n      var data = JSON.stringify({\r\n        \"id\" : 0,\r\n        \"usuario\":{\r\n          \"id\" : id,\r\n          \"dataNasc\" : \"2022-10-20T00:53:48.126Z\",\r\n          \"nome\" : \"\",\r\n          \"tipo\" : 0,\r\n          \"login\" : \"\",\r\n          \"senha\" : \"\",\r\n          \"gerente\": 0\r\n        },\r\n        \"ativo\": {\r\n          \"id\" : i+1,\r\n          \"nome\" : \"string\",\r\n          \"grupo\" : {\r\n            \"id\" : 0,\r\n            \"nome\" : \"\"\r\n          }\r\n        },\r\n        \"saldo\" : this.saldos[i]\r\n  \r\n      });\r\n      var config = {\r\n        method: 'post',\r\n        url: 'http://localhost:5232/usuarioAtivos/register',\r\n        headers: { \r\n          'Content-Type': 'application/json',\r\n          'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n        },\r\n        data : data\r\n      };\r\n      axios(config)\r\n      .then(function (response:any) {\r\n        window.location.reload()\r\n      })\r\n      .catch(function (error:any) {\r\n        console.log(error);\r\n      });\r\n\r\n    }\r\n\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".principal{\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n}\r\n.tabela{\r\n    width: 80%;\r\n}\r\ntable{\r\n    width: 100%;\r\n}\r\n.caixa-filtro{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.titulo{\r\n    padding: 5px;\r\n    margin-bottom: 2%;\r\n}\r\n.filtro{\r\n    width: 50%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: end;\r\n}\r\n.filtro h1{\r\n    font-size: 18px;\r\n    margin-right: 10px;\r\n    margin-top: 5px;\r\n}\r\n\r\n.filtro input{\r\n    padding: 5px;\r\n    margin-right: 3%;\r\n}\r\n.filter{\r\n    padding: 5px;\r\n    margin-right: 11%;\r\n}\r\n\r\n.nome{\r\n    width: 30%;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: baseline;\r\n}\r\n\r\n.nome input{\r\n    padding: 5px;\r\n    width: 100%;\r\n}",
+                    "styleUrl": "./meus-clientes.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"principal\">\r\n    <div class=\"titulo\">\r\n        <h1>\r\n            Meus Clientes\r\n        </h1>\r\n    </div>\r\n    <div class=\"caixa-filtro\">\r\n        <div class=\"nome\">\r\n            <input type=\"text\" class=\"namefield\" id=\"name\" placeholder=\"Nome Completo\">\r\n        </div>\r\n      <div class=\"filtro\">\r\n        <h1>Data de nascimento:</h1>\r\n        <input type=\"text\" id=\"date\" placeholder=\"Data de Nascimento\"  onfocus=\"(this.type='date')\"/>\r\n        <button type=\"button\" class=\"btn btn-success\" (click)=\"cadastrar()\">Salvar</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"tabela\">\r\n        <table class=\"table table-striped\">\r\n          <thead>\r\n            <tr>\r\n            <th>Nome</th>\r\n            <th>Idade</th>\r\n            <th>Saldo</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let item of clientes\">\r\n              <td>{{item.nome}}</td>\r\n              <td>{{item.dataNasc}}</td>\r\n              <td>{{item.saldo}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n    </div>\r\n  </div>\r\n  "
+        },
+        {
+            "name": "MinhaCarteiraComponent",
+            "id": "component-MinhaCarteiraComponent-be414b662964227d81eed39dd04ae1113f4793114c843532db83d94c09fa2428ac25f1cea6beca82e813e4af6fc4389e92135538ee6c610bbd23976664e96fb8",
+            "file": "src/app/minha-carteira/minha-carteira.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-minha-carteira",
+            "styleUrls": [
+                "./minha-carteira.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./minha-carteira.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "ativos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<Ativos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "grupos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<string>",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "IdUsuarioAtivos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<UsuarioAtivos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "soma",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "usuario",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Usuario",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "usuarioAtivos",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<UsuarioAtivos>",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "usuarioId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "AddSaldo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 145,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "DiminuirSaldo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 271,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "PegarIdAtivo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 134,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { Usuario } from '../usuario';\r\nimport { UsuarioAtivos } from '../usuarioAtivos';\r\nimport { Ativos } from '../ativos';\r\nimport {Route, Router} from '@angular/router'\r\nimport axios from 'axios';\r\n\r\n@Component({\r\n  selector: 'app-minha-carteira',\r\n  templateUrl: './minha-carteira.component.html',\r\n  styleUrls: ['./minha-carteira.component.css']\r\n})\r\nexport class MinhaCarteiraComponent implements OnInit {\r\n\r\n  ativos : Array<Ativos> = [];\r\n  grupos : Array<string> = [];\r\n  usuario : Usuario\r\n  usuarioAtivos : Array<UsuarioAtivos> = [];\r\n  IdUsuarioAtivos : Array<UsuarioAtivos> = [];\r\n  usuarioId : number;\r\n  soma: number;\r\n\r\n  constructor(private router: Router) {\r\n\r\n      this.usuarioId = 0\r\n\r\n      this.soma = 0\r\n\r\n      this.usuario = {\r\n\r\n        id: 0,\r\n        nome: \"\",\r\n        dataNasc: \"\",\r\n        senha: \"\",\r\n        login: \"\",\r\n        tipo: 0,\r\n        gerente: 0\r\n\r\n      }\r\n\r\n   }\r\n\r\n  ngOnInit(): void {\r\n\r\n    if(localStorage.getItem(\"authTokenClient\") == null){\r\n      alert(\"Voce nao tem permissao para acessar essa pagina! Fazendo LogOff...\")\r\n      localStorage.removeItem('authTokenClient')\r\n      localStorage.removeItem('authTokenGerente')\r\n      localStorage.removeItem('authTokenAdm')\r\n      this.router.navigate([''])\r\n    }\r\n\r\n    var data = JSON.stringify({\r\n      \r\n    });\r\n    let self = this;\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuario/getById',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      self.usuario = response.data;\r\n      let dataNova = self.usuario.dataNasc.substring(0,10).toString();\r\n      let year = dataNova.substring(0,4);\r\n      let DataAtual = new Date();\r\n      let AnoAtual = DataAtual.getFullYear();\r\n      self.usuario.dataNasc = (AnoAtual  - parseInt(year)).toString();\r\n      self.usuarioId = self.usuario.id\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n    var data2 = JSON.stringify({\r\n      \r\n    });\r\n    var config2 = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuarioAtivos/getByCliente',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n      },\r\n      data : data2\r\n    };\r\n    axios(config2)\r\n    .then(function (response:any) {\r\n      self.usuarioAtivos = response.data;\r\n      for(var i = 0; i < self.usuarioAtivos.length; i++){\r\n        let tem = self.grupos.includes(self.usuarioAtivos[i].ativo.grupo.nome)\r\n\r\n        if(tem == false){\r\n          self.grupos.push(self.usuarioAtivos[i].ativo.grupo.nome)\r\n        }\r\n\r\n        self.soma = self.soma + self.usuarioAtivos[i].saldo\r\n      }\r\n      console.log(self.grupos);\r\n      console.log(self.usuarioAtivos);\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n    var data3 = JSON.stringify({\r\n      \r\n    });\r\n    var config3 = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/ativos/getAll',\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n      },\r\n      data : data3\r\n    };\r\n    axios(config3)\r\n    .then(function (response:any) {\r\n      self.ativos = response.data;\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n  // Funcao para resgatar o Id do Ativo\r\n  PegarIdAtivo(){\r\n\r\n    let select = document.getElementById(\"GrupoAtivo\") as HTMLSelectElement;\r\n    let option = select.options[select.selectedIndex];\r\n\r\n    return parseInt(option.value)\r\n\r\n  }\r\n\r\n\r\n  // Funcao para poder somar o saldo\r\n  AddSaldo(){\r\n\r\n    var idAtivo = this.PegarIdAtivo()\r\n\r\n    let quantia = document.getElementById(\"valor\") as HTMLInputElement;\r\n\r\n    if(quantia.value < \"0\"){\r\n      return alert(\"Insira um valor positivo!\")\r\n    }\r\n\r\n    let self = this;\r\n    \r\n    console.log(\"chegou aqui pra add saldo\");\r\n\r\n    var data = JSON.stringify({\r\n\r\n      \r\n    });\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuarioAtivos/getUserAtivo/' + idAtivo,\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      console.log(response.data);\r\n      self.IdUsuarioAtivos = response.data\r\n      if(response.data.length == 0){\r\n\r\n        var data = JSON.stringify({\r\n          \"id\" : 0,\r\n          \"usuario\":{\r\n            \"id\" : self.usuarioId,\r\n            \"dataNasc\" : \"2022-10-20T00:53:48.126Z\",\r\n            \"nome\" : \"\",\r\n            \"tipo\" : 0,\r\n            \"login\" : \"\",\r\n            \"senha\" : \"\",\r\n            \"gerente\": 0\r\n          },\r\n          \"ativo\": {\r\n            \"id\" : idAtivo,\r\n            \"nome\" : \"string\",\r\n            \"grupo\" : {\r\n              \"id\" : 0,\r\n              \"nome\" : \"\"\r\n            }\r\n          },\r\n          \"saldo\" : quantia.value\r\n\r\n        });\r\n        var config = {\r\n          method: 'post',\r\n          url: 'http://localhost:5232/usuarioAtivos/register',\r\n          headers: { \r\n            'Content-Type': 'application/json',\r\n            'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n          },\r\n          data : data\r\n        };\r\n        axios(config)\r\n        .then(function (response:any) {\r\n          window.location.reload()\r\n        })\r\n        .catch(function (error:any) {\r\n          console.log(error);\r\n        });\r\n\r\n      }\r\n      else{\r\n\r\n        var data = JSON.stringify({\r\n          \"id\" : self.IdUsuarioAtivos[0].id,\r\n          \"usuario\":{\r\n            \"id\" : 0,\r\n            \"dataNasc\" : \"2022-10-20T00:53:48.126Z\",\r\n            \"nome\" : \"\",\r\n            \"tipo\" : 0,\r\n            \"login\" : \"\",\r\n            \"senha\" : \"\",\r\n            \"gerente\": 0\r\n          },\r\n          \"ativo\": {\r\n            \"id\" : 0,\r\n            \"nome\" : \"string\",\r\n            \"grupo\" : {\r\n              \"id\" : 0,\r\n              \"nome\" : \"\"\r\n            }\r\n          },\r\n          \"saldo\" : quantia.value\r\n        });\r\n        var config = {\r\n          method: 'put',\r\n          url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,\r\n          headers: { \r\n            'Content-Type': 'application/json',\r\n            'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n          },\r\n          data : data\r\n          };\r\n          axios(config)\r\n          .then(function (response:any) {\r\n            window.location.reload()\r\n          })\r\n          .catch(function (error:any) {\r\n            console.log(error);\r\n          });\r\n\r\n      }\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n\r\n\r\n   \r\n\r\n  }\r\n\r\n  // Funcao para poder subtrair o saldo\r\n  DiminuirSaldo(){\r\n\r\n    var idAtivo = this.PegarIdAtivo()\r\n\r\n    let quantia = document.getElementById(\"valor\") as HTMLInputElement;\r\n\r\n    let resultado = parseFloat(quantia.value) - (parseFloat(quantia.value)*2)\r\n\r\n    let self = this;\r\n\r\n    var data = JSON.stringify({\r\n      \r\n    });\r\n    var config = {\r\n      method: 'get',\r\n      url: 'http://localhost:5232/usuarioAtivos/getUserAtivo/' + idAtivo,\r\n      headers: { \r\n        'Content-Type': 'application/json',\r\n        'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n      },\r\n      data : data\r\n    };\r\n    axios(config)\r\n    .then(function (response:any) {\r\n      console.log(response.data);\r\n      self.IdUsuarioAtivos = response.data\r\n      if(response.data.length == 0){\r\n\r\n        alert(\"Voce não pode vender um ativo que não possui!\")\r\n      }\r\n      else{\r\n\r\n        if(parseInt(quantia.value) > self.IdUsuarioAtivos[0].saldo){\r\n          console.log(quantia.value)\r\n          console.log(self.IdUsuarioAtivos[0].saldo.toString())\r\n          return alert(\"Você não pode vender mais do que possui!\")\r\n        }\r\n\r\n        if((self.IdUsuarioAtivos[0].saldo + resultado) <= 0){\r\n\r\n          console.log(self.IdUsuarioAtivos[0].id)\r\n\r\n          var data = JSON.stringify({\r\n          });\r\n          var config = {\r\n            method: 'delete',\r\n            url: 'http://localhost:5232/usuarioAtivos/del/' + self.IdUsuarioAtivos[0].id,\r\n            headers: { \r\n              'Content-Type': 'application/json',\r\n              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n            },\r\n            data : data\r\n            };\r\n            axios(config)\r\n            .then(function (response:any) {\r\n              window.location.reload()\r\n            })\r\n            .catch(function (error:any) {\r\n              console.log(error);\r\n            });\r\n        }\r\n        else{\r\n\r\n          var data = JSON.stringify({\r\n            \"id\" : self.IdUsuarioAtivos[0].id,\r\n            \"usuario\":{\r\n              \"id\" : 0,\r\n              \"dataNasc\" : \"2022-10-20T00:53:48.126Z\",\r\n              \"nome\" : \"\",\r\n              \"tipo\" : 0,\r\n              \"login\" : \"\",\r\n              \"senha\" : \"\",\r\n              \"gerente\": 0\r\n            },\r\n            \"ativo\": {\r\n              \"id\" : 0,\r\n              \"nome\" : \"string\",\r\n              \"grupo\" : {\r\n                \"id\" : 0,\r\n                \"nome\" : \"\"\r\n              }\r\n            },\r\n            \"saldo\" : resultado\r\n          });\r\n          var config = {\r\n            method: 'put',\r\n            url: 'http://localhost:5232/usuarioAtivos/mudarSaldo/' + self.IdUsuarioAtivos[0].id,\r\n            headers: { \r\n              'Content-Type': 'application/json',\r\n              'Authorization': 'Bearer ' + localStorage.getItem('authTokenClient')\r\n            },\r\n            data : data\r\n            };\r\n            axios(config)\r\n            .then(function (response:any) {\r\n              window.location.reload()\r\n            })\r\n            .catch(function (error:any) {\r\n              console.log(error);\r\n            });\r\n\r\n        }\r\n\r\n        \r\n\r\n      }\r\n    })\r\n    .catch(function (error:any) {\r\n      console.log(error);\r\n    });\r\n\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".principal{\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n}\r\n.tabela{\r\n    width: 80%;\r\n}\r\ntable{\r\n    width: 100%;\r\n}\r\n.caixa-filtro{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.titulo{\r\n    width: 80%;\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 5px;\r\n    margin-bottom: 2%;\r\n}\r\n\r\n.saldo{\r\n    width: 80%;\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 5px;\r\n    margin-bottom: 2%;\r\n    margin-top: 4%;\r\n}\r\n\r\n.saldo h1{\r\n    display: block;\r\n}\r\n\r\n.carteira{\r\n    width: 50%;\r\n}\r\n\r\n.pessoa{\r\n    width: 50%;\r\n    display: flex;\r\n    justify-content: end;\r\n}\r\n\r\n.filtro{\r\n    width: 30%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: end;\r\n}\r\n.filtro h1{\r\n    font-size: 18px;\r\n    margin-right: 10px;\r\n    margin-top: 5px;\r\n}\r\n\r\n.comprar{\r\n    width: 50%;\r\n    display: flex;\r\n    justify-content: end;\r\n}\r\n\r\n.vender{\r\n    width: 50%;\r\n    display: flex;\r\n    justify-content: end;\r\n}\r\n\r\n.comprar button, .vender button{\r\n    padding: 2% 13% 2% 13%\r\n}\r\n\r\n.filter{\r\n    padding: 5px;\r\n    margin-right: 11%;\r\n}\r\n\r\n.valor {\r\n    width: 20%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.nome{\r\n    width: 30%;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: baseline;\r\n}\r\n\r\n.nome input{\r\n    padding: 5px;\r\n    width: 100%;\r\n}",
+                    "styleUrl": "./minha-carteira.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 21,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-top-bar></app-top-bar>\r\n<div class=\"principal\">\r\n    <div class=\"titulo\">\r\n        <div class=\"carteira\">\r\n            <h1 >\r\n                Minha Carteira\r\n            </h1>\r\n        </div>\r\n        <div class=\"pessoa\">\r\n            <h1 >\r\n                {{usuario.nome}}, {{usuario.dataNasc}}\r\n            </h1>\r\n        </div>\r\n    </div>\r\n    <div class=\"caixa-filtro\">\r\n        <div class=\"nome\">\r\n            <select id=\"GrupoAtivo\">\r\n                <option *ngFor=\"let item of ativos\" value=\"{{item.id}}\" >{{item.grupo.nome}}/{{item.nome}}</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"valor\">\r\n            <input type=\"text\" placeholder=\"Valor R$\" id=\"valor\">\r\n        </div>\r\n      <div class=\"filtro\">\r\n        <div class=\"comprar\">\r\n            <button type=\"button\" class=\"btn btn-secondary\" (click)=\"AddSaldo()\">Comprar</button>\r\n        </div>\r\n        <div class=\"vender\">\r\n            <button type=\"button\" class=\"btn btn-secondary\" (click)=\"DiminuirSaldo()\">Vender</button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"saldo\">\r\n        <div>\r\n            <h1 >\r\n                Saldo Total: R${{soma}}\r\n            </h1>\r\n        </div>\r\n    </div>\r\n    <div *ngFor=\"let item of grupos\" class=\"tabela\">\r\n        <h3 >{{item}}</h3>\r\n        <table class=\"table table-striped\">\r\n          <thead>\r\n            <tr>\r\n            <th>Nome</th>\r\n            <th>Saldo</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let item2 of usuarioAtivos\">\r\n              <td *ngIf=\"item2.ativo.grupo.nome == item\">{{item2.ativo.nome}}</td>\r\n              <td *ngIf=\"item2.ativo.grupo.nome == item\">R${{item2.saldo}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n    </div>\r\n  </div>\r\n  "
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "TopBarComponent",
+            "id": "component-TopBarComponent-a1e03ea5212221d141e122d297e40c5e686123910a5c34ab3034e12608eb7e3d377ec59fd8423cebc0424234ae471d57126273717c292c152f52fcc7e4334959",
+            "file": "src/app/top-bar/top-bar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-top-bar",
+            "styleUrls": [
+                "./top-bar.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./top-bar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "TokenAdm",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "TokenCliente",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "TokenGerente",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "sair",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-top-bar',\r\n  templateUrl: './top-bar.component.html',\r\n  styleUrls: ['./top-bar.component.css']\r\n})\r\nexport class TopBarComponent implements OnInit {\r\n\r\n  TokenCliente : string | null;\r\n  TokenGerente : string | null;\r\n  TokenAdm : string | null;\r\n\r\n  constructor() { \r\n\r\n    this.TokenCliente = localStorage.getItem('authTokenClient')\r\n    this.TokenGerente = localStorage.getItem('authTokenGerente')\r\n    this.TokenAdm = localStorage.getItem('authTokenAdm')\r\n\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  sair(){\r\n\r\n    localStorage.removeItem('authTokenClient')\r\n    localStorage.removeItem('authTokenGerente')\r\n    localStorage.removeItem('authTokenAdm')\r\n\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "nav {\r\n    margin-bottom: 7em;\r\n    height: 5.625em;\r\n    padding: 1.5em;\r\n  }\r\n  .navbar-brand {\r\n    width: 181px;\r\n  }\r\n  .nav-link {\r\n    font-size: large;\r\n  }\r\n  \r\n  @media (max-width: 991px) {\r\n    nav {\r\n      height: auto;\r\n    }\r\n  }",
+                    "styleUrl": "./top-bar.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"d-flex flex-column princ\">\r\n    <nav class=\"navbar navbar-expand-lg bg-light navbar-light\">\r\n      <a class=\"navbar-brand\" href=\"#\">\r\n        <img class=\"js-o-header__logo o-header__logo\"\r\n          src=\"../../assets/img/logo.png\" data-test-id=\"logo\"\r\n          style=\"width: 100%;\" />\r\n         </a>\r\n  \r\n      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\"\r\n        aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <div class=\"container-fluid\">\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\r\n          <ul class=\"navbar-nav\">\r\n            <li *ngIf=\"TokenAdm != null\" class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"adm-landing\">ADM-landing</a>\r\n            </li>\r\n          </ul>\r\n          <ul class=\"navbar-nav ms-auto\">\r\n            <li *ngIf=\"TokenCliente != null\" class=\"nav-item nav-link\">\r\n              Cliente\r\n            </li>\r\n            <li *ngIf=\"TokenGerente != null\" class=\"nav-item nav-link\">\r\n              Gerente\r\n            </li>\r\n            <li *ngIf=\"TokenAdm != null\" class=\"nav-item nav-link\">\r\n              Admin\r\n            </li>\r\n            <li class=\"nav-item \">\r\n              <a  class=\"nav-link\"  [routerLink]=\"['']\" (click)=\"sair()\">Sair</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n  </div>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-cc9824df69132aa88f6d4015238d6f98e0f004c3774f935139bc3c3f94d9039164dd03a3afd48dc18d5b161a60afe615cf4d7675e327694746ba24e53f22b36a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { LoginComponent } from './login/login.component';\r\nimport { Router, RouterModule } from '@angular/router';\r\nimport { TopBarComponent } from './top-bar/top-bar.component';\r\nimport { AdminLandingComponent } from './admin-landing/admin-landing.component';\r\nimport { GerenteCadastroComponent } from './gerente-cadastro/gerente-cadastro.component';\r\nimport { AtivosCadastroComponent } from './ativos-cadastro/ativos-cadastro.component';\r\nimport { MeusClientesComponent } from './meus-clientes/meus-clientes.component';\r\nimport { MinhaCarteiraComponent } from './minha-carteira/minha-carteira.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    LoginComponent,\r\n    TopBarComponent,\r\n    AdminLandingComponent,\r\n    GerenteCadastroComponent,\r\n    AtivosCadastroComponent,\r\n    MeusClientesComponent,\r\n    MinhaCarteiraComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    RouterModule.forRoot([\r\n      {path: '', component: LoginComponent},\r\n      {path: 'adm-landing', component: AdminLandingComponent},\r\n      {path: 'atv-cadastro', component: AtivosCadastroComponent},\r\n      {path: 'gerente-cadastro', component: GerenteCadastroComponent},\r\n      {path: 'meus-clientes', component:MeusClientesComponent},\r\n      {path:'minha-carteira', component:MinhaCarteiraComponent}\r\n    ])\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AdminLandingComponent"
+                        },
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "AtivosCadastroComponent"
+                        },
+                        {
+                            "name": "GerenteCadastroComponent"
+                        },
+                        {
+                            "name": "LoginComponent"
+                        },
+                        {
+                            "name": "MeusClientesComponent"
+                        },
+                        {
+                            "name": "MinhaCarteiraComponent"
+                        },
+                        {
+                            "name": "TopBarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-4518c33195180c88b148f5ad346bbd509e37db201ff0191c9bd5d00989bc674a7e8476b2298b5f61b74b4fa3379b6d71a3615e2cc472074cf6e416b23941131b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: true\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false\r\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/admin-landing/admin-landing.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AdminLandingComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/ativos-cadastro/ativos-cadastro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtivosCadastroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/ativos.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Ativos",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/gerente-cadastro/gerente-cadastro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GerenteCadastroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/grupos.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Grupos",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/login/login.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoginComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/meus-clientes/meus-clientes.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MeusClientesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/minha-carteira/minha-carteira.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MinhaCarteiraComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/top-bar/top-bar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TopBarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/usuario.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Usuario",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/usuarioAtivos.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "UsuarioAtivos",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
